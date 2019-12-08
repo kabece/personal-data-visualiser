@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './app.css'
 import '../node_modules/react-vis/dist/style.css'
-import {XYPlot, LineSeries} from 'react-vis'
+import {XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines, XAxis, YAxis} from 'react-vis'
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
@@ -22,6 +22,10 @@ class App extends Component {
       <div className='App'>
         <XYPlot height={300} width={300}>
           <LineSeries data={data} />
+          <VerticalGridLines />
+          <HorizontalGridLines />
+          <XAxis />
+          <YAxis />
         </XYPlot>
       </div>
     )
