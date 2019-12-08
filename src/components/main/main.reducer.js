@@ -4,7 +4,9 @@ const initialState = {}
 
 const mainReducer = createReducer({
   initialState,
-  actions: {},
+  actions: {
+    abc: () => ({abc: 123})
+  },
   options: {
     mode: 'setState'
   }
