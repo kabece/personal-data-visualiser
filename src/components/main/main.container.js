@@ -12,15 +12,16 @@ import {convertSleepDataToTimeSeries} from './main.helper'
 
 const Main = () => {
   const sleepDataSeries = convertSleepDataToTimeSeries(sleepData)
+  console.log('timeRange', sleepDataSeries.timerange())
+  console.log('sleepDataSeries', sleepDataSeries.toString())
 
   return (
     <ChartContainer timeRange={sleepDataSeries.timerange()} width={800}>
       <ChartRow height='200'>
-        <YAxis id='axis1' label='AUD' min={0.5} max={1.5} width='60' type='linear' format='$,.2f' />
+        <YAxis id='axis1' label='Activity' min={0.5} max={15000.5} width='60' type='linear' format='.2f' />
         <Charts>
-          <LineChart axis='axis1' series={sleepDataSeries} column={['Time in bed']} />
+          <LineChart axis='axis1' series={sleepDataSeries} columns={['activity']} />
         </Charts>
-        <YAxis id='axis2' label='Euro' min={0.5} max={1.5} width='80' type='linear' format='$,.2f' />
       </ChartRow>
     </ChartContainer>
   )
