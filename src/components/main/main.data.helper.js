@@ -8,6 +8,8 @@ const createTimeRange = (beginTime, endTime) => new TimeRange(
   moment(endTime, timeFormat)
 )
 
+const prepareTimeInBed = timeInBed => Number(timeInBed.split(':')[0]) + Number(timeInBed.split(':')[1]) / 60
+
 const prepareSleepData = sleepData =>
   sleepData.map(element => ({
     start: element['Start'], // eslint-disable-line dot-notation
@@ -23,7 +25,7 @@ const convertSleepDataToTimeseries = sleepData => {
     createTimeRange(element.start, element.end),
     {
       sleepQuality: element.sleepQuality,
-      timeInBed: element.timeInBed,
+      timeInBed: prepareTimeInBed(element.timeInBed),
       activity: element.activity
     }
   ))

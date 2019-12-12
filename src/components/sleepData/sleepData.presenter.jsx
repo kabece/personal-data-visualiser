@@ -12,6 +12,8 @@ import {
 const SleepData = ({sleepDataSeries}) => {
   const [timerange, setTimerange] = useState(sleepDataSeries.timerange())
 
+  console.log('sleepDataSeries', sleepDataSeries.toString())
+
   return (
     <ChartContainer
       title='DDoS attack - connections vs requests'
@@ -51,14 +53,22 @@ const SleepData = ({sleepDataSeries}) => {
             style={styler}
             interpolation='curveBasis'
           />
+          <LineChart
+            key='timeInBed'
+            axis='timeInBedAxis'
+            series={sleepDataSeries}
+            columns={['timeInBed']}
+            style={styler}
+            interpolation='curveBasis'
+          />
         </Charts>
         <YAxis
-          id='activityAxis'
-          label='Activity'
+          id='timeInBedAxis'
+          label='Time in bed'
           labelOffset={2}
           min={0}
           format=',.0f'
-          max={sleepDataSeries.max('activity')}
+          max={sleepDataSeries.max('timeInBed')}
           width='80'
           type='linear'
         />
