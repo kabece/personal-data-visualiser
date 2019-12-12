@@ -17,7 +17,7 @@ const prepareSleepData = sleepData =>
     activity: Number(element['Activity (steps)'])
   }))
 
-const convertSleepDataToTimeSeries = sleepData => {
+const convertSleepDataToTimeseries = sleepData => {
   const name = 'Sleep Data'
   const events = prepareSleepData(sleepData).map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
@@ -32,4 +32,4 @@ const convertSleepDataToTimeSeries = sleepData => {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export {convertSleepDataToTimeSeries}
+export {convertSleepDataToTimeseries}

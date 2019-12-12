@@ -1,30 +1,74 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {object} from 'prop-types'
 import {
   Charts,
   ChartContainer,
   ChartRow,
   YAxis,
-  LineChart
+  LineChart,
+  styler
 } from 'react-timeseries-charts'
 
-import sleepData from '../../data/sleepData.json'
-import {convertSleepDataToTimeSeries} from './sleepData.helper'
-
-const SleepData = () => {
-  const sleepDataSeries = convertSleepDataToTimeSeries(sleepData)
-  console.log('timeRange', sleepDataSeries.timerange())
-  console.log('sleepDataSeries', sleepDataSeries.toString())
+const SleepData = ({sleepDataSeries}) => {
+  const [timerange, setTimerange] = useState(sleepDataSeries.timerange())
 
   return (
-    <ChartContainer timeRange={sleepDataSeries.timerange()} width={800}>
-      <ChartRow height='200'>
-        <YAxis id='axis1' label='Activity' min={0.5} max={15000.5} width='60' type='linear' format='.2f' />
+    <ChartContainer
+      title='DDoS attack - connections vs requests'
+      style={{
+        background: '#201d1e',
+        borderRadius: 8,
+        borderStyle: 'solid',
+        borderWidth: 1,
+        borderColor: '#232122'
+      }}
+      padding={20}
+      paddingTop={5}
+      paddingBottom={0}
+      enableDragZoom
+      onTimeRangeChanged={newTimerange => setTimerange(newTimerange)}
+      timeRange={timerange}
+      maxTime={sleepDataSeries.range().end()}
+      minTime={sleepDataSeries.range().begin()}
+    >
+      <ChartRow height='300'>
+        <YAxis
+          id='activityAxis'
+          label='Activity'
+          labelOffset={-20}
+          min={0}
+          max={sleepDataSeries.max('activity')}
+          format=',.0f'
+          width='60'
+          type='linear'
+        />
         <Charts>
-          <LineChart axis='axis1' series={sleepDataSeries} columns={['activity']} />
+          <LineChart
+            key='activity'
+            axis='activityAxis'
+            series={sleepDataSeries}
+            columns={['activity']}
+            style={styler}
+            interpolation='curveBasis'
+          />
         </Charts>
+        <YAxis
+          id='activityAxis'
+          label='Activity'
+          labelOffset={2}
+          min={0}
+          format=',.0f'
+          max={sleepDataSeries.max('activity')}
+          width='80'
+          type='linear'
+        />
       </ChartRow>
     </ChartContainer>
   )
+}
+
+SleepData.propTypes = {
+  sleepDataSeries: object.isRequired // eslint-disable-line react/forbid-prop-types
 }
 
 export default SleepData
