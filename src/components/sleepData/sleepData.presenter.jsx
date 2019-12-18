@@ -9,7 +9,7 @@ import {
   styler
 } from 'react-timeseries-charts'
 
-import {timeRangeShape} from '../main/main.shapes'
+import {timeRangeShape} from '../../index.shapes'
 
 const SleepData = ({
   sleepDataSeries,

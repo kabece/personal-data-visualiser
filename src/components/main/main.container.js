@@ -7,7 +7,7 @@ import {convertSleepDataToTimeseries} from './main.data.helper'
 import sleepData from '../../data/sleepData.json'
 import selector from './main.selector'
 import {setPrimaryTimeRange} from './main.actionCreators'
-import {timeRangeShape} from './main.shapes'
+import {timeRangeShape} from '../../index.shapes'
 
 const Main = ({
   primaryTimeRange,
