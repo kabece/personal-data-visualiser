@@ -21,14 +21,24 @@ const prepareSleepData = data =>
     activity: Number(element['Activity (steps)'])
   }))
 
-const convertSleepDataToTimeseries = data => {
-  const name = 'Sleep Data'
+const convertTimeInBedToTimeseries = data => {
+  const name = 'Time in Bed'
   const events = prepareSleepData(data).map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
     {
-      sleepQuality: element.sleepQuality,
-      timeInBed: prepareTimeInBed(element.timeInBed),
-      activity: element.activity
+      value: prepareTimeInBed(element.timeInBed)
+    }
+  ))
+
+  return new TimeSeries({name, events})
+}
+
+const convertStepCountToTimeseries = data => {
+  const name = 'Step Count'
+  const events = prepareSleepData(data).map(element => new TimeRangeEvent(
+    createTimeRange(element.start, element.end),
+    {
+      value: element.activity
     }
   ))
 
@@ -36,8 +46,9 @@ const convertSleepDataToTimeseries = data => {
 }
 
 const prepareData = () => {
-  const sleepDataTimeSeries = convertSleepDataToTimeseries(sleepData)
-  return [sleepDataTimeSeries]
+  const timeInBedTimeSeries = convertTimeInBedToTimeseries(sleepData)
+  const stepCountTimeSeries = convertStepCountToTimeseries(sleepData)
+  return [timeInBedTimeSeries, stepCountTimeSeries]
 }
 
 // eslint-disable-next-line import/prefer-default-export

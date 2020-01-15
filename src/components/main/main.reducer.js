@@ -12,17 +12,13 @@ const initialState = {
   data: [],
   dataSourceOptions: [
     {
-      displayName: 'Sleep Data',
-      value: 'Sleep Data',
-      dataType: dataTypes.numerical,
-      plottedParameter: {
-        displayName: 'Time in bed',
-        value: 'timeInBed'
-      }
+      displayName: 'Time in Bed',
+      value: 'Time in Bed',
+      dataType: dataTypes.numerical
     },
     {
-      displayName: 'Heart Rate Data',
-      value: 'Heart Rate Data',
+      displayName: 'Step Count',
+      value: 'Step Count',
       dataType: dataTypes.numerical
     }
   ],

@@ -18,7 +18,6 @@ const ChartTypeSwitcher = ({
           chartTitle={chart.title}
           timeRange={chart.timeRange}
           onSetTimeRange={onSetTimeRange}
-          plottedParameter={chart.plottedParameter}
           key={chart.id}
         />
       )

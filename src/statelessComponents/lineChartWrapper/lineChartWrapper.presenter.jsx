@@ -1,5 +1,5 @@
 import React from 'react'
-import {object, shape, string, func} from 'prop-types'
+import {object, string, func} from 'prop-types'
 import {
   Charts,
   ChartContainer,
@@ -13,7 +13,6 @@ import {timeRangeShape} from '../../index.shapes'
 
 const LineChartWrapper = ({
   dataSeries,
-  plottedParameter,
   timeRange,
   chartTitle,
   onSetTimeRange
@@ -38,32 +37,29 @@ const LineChartWrapper = ({
   >
     <ChartRow height='300'>
       <YAxis
-        id={plottedParameter.value}
-        label={plottedParameter.displayName}
-        labelOffset={-20}
+        id='value'
         min={0}
-        max={dataSeries.max(plottedParameter.value)}
+        max={dataSeries.max('value')}
         format=',.0f'
         width='60'
         type='linear'
       />
       <Charts>
         <LineChart
-          key={plottedParameter.value}
-          axis={plottedParameter.value}
+          key='value'
+          axis='value'
           series={dataSeries}
-          columns={[plottedParameter.value]}
+          columns={['value']}
           style={styler}
           interpolation='curveBasis'
         />
       </Charts>
       <YAxis
-        id={plottedParameter.value}
-        labelOffset={2}
+        id='value'
         min={0}
         format=',.0f'
-        max={dataSeries.max(plottedParameter.value)}
-        width='80'
+        max={dataSeries.max('value')}
+        width='60'
         type='linear'
       />
     </ChartRow>
@@ -72,10 +68,6 @@ const LineChartWrapper = ({
 
 LineChartWrapper.propTypes = {
   dataSeries: object.isRequired, // FIXME:
-  plottedParameter: shape({
-    displayName: string.isRequired,
-    value: string.isRequired
-  }),
   timeRange: timeRangeShape.isRequired,
   chartTitle: string.isRequired,
   onSetTimeRange: func.isRequired
