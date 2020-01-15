@@ -71,7 +71,7 @@ const LineChartWrapper = ({
 )
 
 LineChartWrapper.propTypes = {
-  dataSeries: object.isRequired,
+  dataSeries: object.isRequired, // FIXME:
   plottedParameter: shape({
     displayName: string.isRequired,
     value: string.isRequired

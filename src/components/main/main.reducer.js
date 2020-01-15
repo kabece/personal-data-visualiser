@@ -14,7 +14,11 @@ const initialState = {
     {
       displayName: 'Sleep Data',
       value: 'Sleep Data',
-      dataType: dataTypes.numerical
+      dataType: dataTypes.numerical,
+      plottedParameter: {
+        displayName: 'Time in bed',
+        value: 'timeInBed'
+      }
     },
     {
       displayName: 'Heart Rate Data',
@@ -34,8 +38,19 @@ const initialState = {
 const mainReducer = createReducer({
   initialState,
   actions: {
-    [actions.SET_PRIMARY_TIME_RANGE]: ({action: {primaryTimeRange}}) => ({primaryTimeRange}),
     [actions.LOAD_DATA]: ({action: {data}}) => ({data}),
+    [actions.SET_TIME_RANGE]: ({
+      action: {newTimeRange, chartId},
+      state: {charts: previousCharts}
+    }) => ({
+      charts: {
+        ...previousCharts,
+        [chartId]: {
+          ...previousCharts[chartId],
+          timeRange: newTimeRange
+        }
+      }
+    }),
     [actions.SET_DATA_SOURCE]: ({
       action: {dataSourceOption, chartId},
       state: {charts: previousCharts, data}
@@ -44,8 +59,11 @@ const mainReducer = createReducer({
         ...previousCharts,
         [chartId]: {
           ...previousCharts[chartId],
+          dataSeries: data.find(dataElement => dataElement.name() === dataSourceOption.value),
+          timeRange: data.find(dataElement => dataElement.name() === dataSourceOption.value).timerange(),
           dataType: dataSourceOption.dataType,
-          dataSeries: data.find(dataElement => dataElement.name() === dataSourceOption.value)
+          title: dataSourceOption.displayName,
+          plottedParameter: dataSourceOption.plottedParameter
         }
       }
     }),

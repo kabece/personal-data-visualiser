@@ -15,8 +15,8 @@ const optionsShape = arrayOf(shape({
 }))
 
 const timeRangeShape = shape({
-  0: string.isRequired,
-  1: string.isRequired
+  0: string,
+  1: string
 })
 
 const chartShape = shape({

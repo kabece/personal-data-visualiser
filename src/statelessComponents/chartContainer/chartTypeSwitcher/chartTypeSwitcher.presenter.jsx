@@ -1,26 +1,24 @@
 import React from 'react'
-import {oneOf, func} from 'prop-types'
+import {func} from 'prop-types'
 
 import LineChartWrapper from '../../lineChartWrapper/lineChartWrapper.presenter'
-import {timeRangeShape, chartTypes, chartShape} from '../../../index.shapes'
+import {chartTypes, chartShape} from '../../../index.shapes'
 
 const ChartTypeSwitcher = ({
   chart,
-  chartType,
-  primaryTimeRange,
-  onSetPrimaryTimeRange
+  onSetTimeRange
 }) => {
   // FIXME:
   // eslint-disable-next-line
-  switch (chartType) {
+  switch (chart.chartType) {
     case chartTypes.lineChart:
       return (
         <LineChartWrapper
           dataSeries={chart.dataSeries}
           chartTitle={chart.title}
           timeRange={chart.timeRange}
-          primaryTimeRange={primaryTimeRange}
-          onSetPrimaryTimeRange={onSetPrimaryTimeRange}
+          onSetTimeRange={onSetTimeRange}
+          plottedParameter={chart.plottedParameter}
           key={chart.id}
         />
       )
@@ -33,9 +31,7 @@ const ChartTypeSwitcher = ({
 
 ChartTypeSwitcher.propTypes = {
   chart: chartShape,
-  chartType: oneOf([chartTypes.lineChart]),
-  primaryTimeRange: timeRangeShape,
-  onSetPrimaryTimeRange: func.isRequired
+  onSetTimeRange: func.isRequired
 }
 
 export default ChartTypeSwitcher

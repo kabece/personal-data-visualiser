@@ -5,15 +5,14 @@ import {connect} from 'react-redux'
 import ChartContainer from '../../statelessComponents/chartContainer/chartContainer.presenter'
 import selector from './main.selector'
 import {prepareData} from './main.data.helper'
-import {setPrimaryTimeRange, setDataSource, setChartType, loadData} from './main.actionCreators'
-import {timeRangeShape, optionsShape, chartShape} from '../../index.shapes'
+import {setTimeRange, setDataSource, setChartType, loadData} from './main.actionCreators'
+import {optionsShape, chartShape} from '../../index.shapes'
 
 const Main = ({
   charts,
-  primaryTimeRange,
   dataSourceOptions,
   chartTypeOptions,
-  onSetPrimaryTimeRange,
+  onSetTimeRange,
   onDataSourceSelect,
   onChartTypeSelect,
   onLoadData
@@ -30,7 +29,6 @@ const Main = ({
           chart={charts[key]}
           dataSourceOptions={dataSourceOptions}
           chartTypeOptions={chartTypeOptions}
-          primaryTimeRange={primaryTimeRange}
           onDataSourceSelect={({selectedValue}) =>
             onDataSourceSelect({
               chartId: key,
@@ -41,7 +39,7 @@ const Main = ({
               chartId: key,
               chartTypeOption: chartTypeOptions.find(option => option.value === selectedValue)
             })}
-          onSetPrimaryTimeRange={onSetPrimaryTimeRange}
+          onSetTimeRange={({newTimeRange}) => onSetTimeRange({chartId: key, newTimeRange})}
         />
       ))}
     </div>
@@ -50,17 +48,16 @@ const Main = ({
 
 Main.propTypes = {
   charts: objectOf(chartShape).isRequired,
-  primaryTimeRange: timeRangeShape,
   dataSourceOptions: optionsShape.isRequired,
   chartTypeOptions: optionsShape.isRequired,
-  onSetPrimaryTimeRange: func.isRequired,
+  onSetTimeRange: func.isRequired,
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
   onLoadData: func.isRequired
 }
 
 const mapDispatchToProps = dispatch => ({
-  onSetPrimaryTimeRange: ({primaryTimeRange}) => dispatch(setPrimaryTimeRange({primaryTimeRange})),
+  onSetTimeRange: ({newTimeRange, chartId}) => dispatch(setTimeRange({newTimeRange, chartId})),
   onDataSourceSelect: ({dataSourceOption, chartId}) => dispatch(setDataSource({dataSourceOption, chartId})),
   onChartTypeSelect: ({chartTypeOption, chartId}) => dispatch(setChartType({chartTypeOption, chartId})),
   onLoadData: ({data}) => dispatch(loadData({data}))
