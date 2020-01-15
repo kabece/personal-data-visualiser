@@ -11,8 +11,9 @@ const Select = ({
   <div>
     <span>{label}</span>
     <select onChange={event => onChange({selectedValue: event.target.value})}>
+      <option value=''>Please choose</option>
       {options.map(option => (
-        <option value={option.value}>
+        <option value={option.value} key={option.value}>
           {option.displayName}
         </option>
       ))}

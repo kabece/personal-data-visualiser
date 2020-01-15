@@ -1,6 +1,8 @@
 import moment from 'moment'
 import {TimeRange, TimeSeries, TimeRangeEvent} from 'pondjs'
 
+import sleepData from '../../data/sleepData.json'
+
 const timeFormat = 'YYYY-MM-DD HH:mm:ss'
 
 const createTimeRange = (beginTime, endTime) => new TimeRange(
@@ -10,8 +12,8 @@ const createTimeRange = (beginTime, endTime) => new TimeRange(
 
 const prepareTimeInBed = timeInBed => Number(timeInBed.split(':')[0]) + Number(timeInBed.split(':')[1]) / 60
 
-const prepareSleepData = sleepData =>
-  sleepData.map(element => ({
+const prepareSleepData = data =>
+  data.map(element => ({
     start: element['Start'], // eslint-disable-line dot-notation
     end: element['End'], // eslint-disable-line dot-notation
     sleepQuality: element['Sleep quality'],
@@ -19,9 +21,9 @@ const prepareSleepData = sleepData =>
     activity: Number(element['Activity (steps)'])
   }))
 
-const convertSleepDataToTimeseries = sleepData => {
+const convertSleepDataToTimeseries = data => {
   const name = 'Sleep Data'
-  const events = prepareSleepData(sleepData).map(element => new TimeRangeEvent(
+  const events = prepareSleepData(data).map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
     {
       sleepQuality: element.sleepQuality,
@@ -33,5 +35,10 @@ const convertSleepDataToTimeseries = sleepData => {
   return new TimeSeries({name, events})
 }
 
+const prepareData = () => {
+  const sleepDataTimeSeries = convertSleepDataToTimeseries(sleepData)
+  return [sleepDataTimeSeries]
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export {convertSleepDataToTimeseries}
+export {prepareData}

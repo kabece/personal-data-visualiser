@@ -1,15 +1,19 @@
 import React from 'react'
-import {node, func} from 'prop-types'
+import {func, oneOf} from 'prop-types'
 
 import ChartControls from '../chartControls/chartControls.presenter'
-import {optionsShape} from '../../index.shapes'
+import ChartTypeSwitcher from './chartTypeSwitcher/chartTypeSwitcher.presenter'
+import {optionsShape, chartTypes, timeRangeShape, chartShape} from '../../index.shapes'
 
 const ChartContainer = ({
-  children,
+  chart,
+  chartType,
   dataSourceOptions,
   chartTypeOptions,
   onDataSourceSelect,
-  onChartTypeSelect
+  onChartTypeSelect,
+  primaryTimeRange,
+  onSetPrimaryTimeRange
 }) => (
   <div>
     <ChartControls
@@ -18,16 +22,24 @@ const ChartContainer = ({
       onDataSourceSelect={onDataSourceSelect}
       onChartTypeSelect={onChartTypeSelect}
     />
-    {children}
+    <ChartTypeSwitcher
+      chart={chart}
+      chartType={chartType}
+      primaryTimeRange={primaryTimeRange}
+      onSetPrimaryTimeRange={onSetPrimaryTimeRange}
+    />
   </div>
 )
 
 ChartContainer.propTypes = {
-  children: node.isRequired,
+  chart: chartShape,
+  chartType: oneOf([chartTypes.lineChart]),
+  primaryTimeRange: timeRangeShape,
   dataSourceOptions: optionsShape.isRequired,
   chartTypeOptions: optionsShape.isRequired,
   onDataSourceSelect: func.isRequired,
-  onChartTypeSelect: func.isRequired
+  onChartTypeSelect: func.isRequired,
+  onSetPrimaryTimeRange: func.isRequired
 }
 
 export default ChartContainer
