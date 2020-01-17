@@ -44,7 +44,16 @@ const mainReducer = createReducer({
         [chartId]: {
           ...previousCharts[chartId],
           timeRange: newTimeRange
-        }
+        },
+        ...Object.keys(previousCharts)
+          .filter(key => previousCharts[key].timeRangeSource === chartId)
+          .reduce((acc, currentKey) => {
+            acc[currentKey] = {
+              ...previousCharts[currentKey],
+              timeRange: newTimeRange
+            }
+            return acc
+          }, {})
       }
     }),
     [actions.SET_DATA_SOURCE]: ({
@@ -72,6 +81,22 @@ const mainReducer = createReducer({
         [chartId]: {
           ...previousCharts[chartId],
           chartType: chartTypeOption.value
+        }
+      }
+    }),
+    [actions.SET_TIME_RANGE_SOURCE]: ({
+      action: {timeRangeSourceOption, chartId},
+      state: {charts: previousCharts}
+    }) => ({
+      charts: {
+        ...previousCharts,
+        [chartId]: {
+          ...previousCharts[chartId],
+          timeRangeSource: timeRangeSourceOption.value,
+          timeRange: Object.keys(previousCharts)
+            .map(key => previousCharts[key])
+            .find(element => element.title === timeRangeSourceOption.displayName)
+            .timeRange
         }
       }
     })

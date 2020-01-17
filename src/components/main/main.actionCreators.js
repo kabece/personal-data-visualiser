@@ -18,6 +18,12 @@ export const setChartType = ({chartTypeOption, chartId}) => ({
   chartId
 })
 
+export const setTimeRangeSource = ({timeRangeSourceOption, chartId}) => ({
+  type: actions.SET_TIME_RANGE_SOURCE,
+  timeRangeSourceOption,
+  chartId
+})
+
 export const loadData = ({data}) => ({
   type: actions.LOAD_DATA,
   data

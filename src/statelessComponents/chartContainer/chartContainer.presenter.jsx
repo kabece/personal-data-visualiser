@@ -9,16 +9,20 @@ const ChartContainer = ({
   chart,
   dataSourceOptions,
   chartTypeOptions,
+  timeRangeSourceOptions,
   onDataSourceSelect,
   onChartTypeSelect,
+  onTimeRangeSourceSelect,
   onSetTimeRange
 }) => (
   <div>
     <ChartControls
       dataSourceOptions={dataSourceOptions}
       chartTypeOptions={chartTypeOptions}
+      timeRangeSourceOptions={timeRangeSourceOptions}
       onDataSourceSelect={onDataSourceSelect}
       onChartTypeSelect={onChartTypeSelect}
+      onTimeRangeSourceSelect={onTimeRangeSourceSelect}
     />
     <ChartTypeSwitcher
       chart={chart}
@@ -31,8 +35,10 @@ ChartContainer.propTypes = {
   chart: chartShape,
   dataSourceOptions: optionsShape.isRequired,
   chartTypeOptions: optionsShape.isRequired,
+  timeRangeSourceOptions: optionsShape.isRequired,
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
+  onTimeRangeSourceSelect: func.isRequired,
   onSetTimeRange: func.isRequired
 }
 

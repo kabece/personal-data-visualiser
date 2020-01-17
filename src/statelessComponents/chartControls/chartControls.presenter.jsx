@@ -7,8 +7,10 @@ import {optionsShape} from '../../index.shapes'
 const ChartControls = ({
   dataSourceOptions,
   chartTypeOptions,
+  timeRangeSourceOptions,
   onDataSourceSelect,
-  onChartTypeSelect
+  onChartTypeSelect,
+  onTimeRangeSourceSelect
 }) => (
   <div>
     <Select
@@ -21,14 +23,21 @@ const ChartControls = ({
       label='Chart Type: '
       onChange={onChartTypeSelect}
     />
+    <Select
+      options={timeRangeSourceOptions}
+      label='Time Range: '
+      onChange={onTimeRangeSourceSelect}
+    />
   </div>
 )
 
 ChartControls.propTypes = {
   dataSourceOptions: optionsShape.isRequired,
   chartTypeOptions: optionsShape.isRequired,
+  timeRangeSourceOptions: optionsShape.isRequired,
   onDataSourceSelect: func.isRequired,
-  onChartTypeSelect: func.isRequired
+  onChartTypeSelect: func.isRequired,
+  onTimeRangeSourceSelect: func.isRequired
 }
 
 export default ChartControls
