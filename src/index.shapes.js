@@ -11,7 +11,7 @@ const chartTypes = {
 const optionsShape = arrayOf(shape({
   displayName: string.isRequired,
   value: string.isRequired,
-  dataType: oneOf([dataTypes.numerical]).isRequired
+  dataType: oneOf([dataTypes.numerical])
 }))
 
 const timeRangeShape = shape({

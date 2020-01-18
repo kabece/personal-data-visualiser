@@ -7,7 +7,7 @@ export default createSelector(
   main => ({
     ...main,
     timeRangeSourceOptions: Object.keys(main.charts).map(key => ({
-      displayName: main.charts[key].title,
+      displayName: main.charts[key].title || '',
       value: key
     }))
   })
