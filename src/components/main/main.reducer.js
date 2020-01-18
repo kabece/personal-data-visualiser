@@ -22,6 +22,11 @@ const initialState = {
       displayName: 'Step Count',
       value: 'Step Count',
       dataType: dataTypes.numerical
+    },
+    {
+      displayName: 'Sleep Quality (%)',
+      value: 'Sleep Quality (%)',
+      dataType: dataTypes.numerical
     }
   ],
   chartTypeOptions: [

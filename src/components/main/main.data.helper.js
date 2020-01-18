@@ -11,6 +11,7 @@ const createTimeRange = (beginTime, endTime) => new TimeRange(
 )
 
 const prepareTimeInBed = timeInBed => Number(timeInBed.split(':')[0]) + Number(timeInBed.split(':')[1]) / 60
+const prepareSleepQuality = sleepQuality => Number(sleepQuality.slice(0, -1))
 
 const prepareSleepData = data =>
   data.map(element => ({
@@ -21,7 +22,7 @@ const prepareSleepData = data =>
     activity: Number(element['Activity (steps)'])
   }))
 
-const convertTimeInBedToTimeseries = data => {
+const convertTimeInBedToTimeSeries = data => {
   const name = 'Time in Bed'
   const events = prepareSleepData(data).map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
@@ -33,7 +34,7 @@ const convertTimeInBedToTimeseries = data => {
   return new TimeSeries({name, events})
 }
 
-const convertStepCountToTimeseries = data => {
+const convertStepCountToTimeSeries = data => {
   const name = 'Step Count'
   const events = prepareSleepData(data).map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
@@ -45,10 +46,23 @@ const convertStepCountToTimeseries = data => {
   return new TimeSeries({name, events})
 }
 
+const convertSleepQualityToTimeSeries = data => {
+  const name = 'Sleep Quality (%)'
+  const events = prepareSleepData(data).map(element => new TimeRangeEvent(
+    createTimeRange(element.start, element.end),
+    {
+      value: prepareSleepQuality(element.sleepQuality)
+    }
+  ))
+
+  return new TimeSeries({name, events})
+}
+
 const prepareData = () => {
-  const timeInBedTimeSeries = convertTimeInBedToTimeseries(sleepData)
-  const stepCountTimeSeries = convertStepCountToTimeseries(sleepData)
-  return [timeInBedTimeSeries, stepCountTimeSeries]
+  const timeInBedTimeSeries = convertTimeInBedToTimeSeries(sleepData)
+  const stepCountTimeSeries = convertStepCountToTimeSeries(sleepData)
+  const sleepQualityTimeSeries = convertSleepQualityToTimeSeries(sleepData)
+  return [timeInBedTimeSeries, stepCountTimeSeries, sleepQualityTimeSeries]
 }
 
 // eslint-disable-next-line import/prefer-default-export
