@@ -1,0 +1,15 @@
+.select {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  select {
+    background-color: $mainBackgroundColor;
+    color: $chartFontColor;
+  }
+}

@@ -7,7 +7,9 @@ const initialState = {
   primaryTimeRange: null,
   charts: {
     1: {},
-    2: {}
+    2: {},
+    3: {},
+    4: {}
   },
   data: [],
   dataSourceOptions: [

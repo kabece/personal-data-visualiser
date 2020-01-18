@@ -24,7 +24,7 @@ const Main = ({
   }, [onLoadData])
 
   return (
-    <div>
+    <div className='main'>
       {Object.keys(charts).map(key => (
         <ChartContainer
           key={key}

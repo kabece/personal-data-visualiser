@@ -1,8 +1,8 @@
 import React from 'react'
 import {func} from 'prop-types'
 
-import Select from '../select/select.presenter'
-import {optionsShape} from '../../index.shapes'
+import Select from '../../select/select.presenter'
+import {optionsShape} from '../../../index.shapes'
 
 const ChartControls = ({
   dataSourceOptions,
@@ -12,7 +12,7 @@ const ChartControls = ({
   onChartTypeSelect,
   onTimeRangeSourceSelect
 }) => (
-  <div>
+  <div className='chartControls'>
     <Select
       options={dataSourceOptions}
       label='Data Source: '

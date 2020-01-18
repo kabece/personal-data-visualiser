@@ -8,7 +8,7 @@ const Select = ({
   label,
   onChange
 }) => (
-  <div>
+  <div className='select'>
     <span>{label}</span>
     <select onChange={event => onChange({selectedValue: event.target.value})}>
       <option value=''>Please choose</option>

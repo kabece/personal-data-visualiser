@@ -34,8 +34,9 @@ const LineChartWrapper = ({
     timeRange={timeRange}
     maxTime={dataSeries.range().end()} // FIXME: maybe figure out how to use that
     minTime={dataSeries.range().begin()}
+    width={500}
   >
-    <ChartRow height='300'>
+    <ChartRow height='200'>
       <YAxis
         id='value'
         min={0}

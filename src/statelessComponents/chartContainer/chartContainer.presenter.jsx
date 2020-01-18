@@ -1,7 +1,7 @@
 import React from 'react'
 import {func} from 'prop-types'
 
-import ChartControls from '../chartControls/chartControls.presenter'
+import ChartControls from './chartControls/chartControls.presenter'
 import ChartTypeSwitcher from './chartTypeSwitcher/chartTypeSwitcher.presenter'
 import {optionsShape, chartShape} from '../../index.shapes'
 
@@ -15,7 +15,7 @@ const ChartContainer = ({
   onTimeRangeSourceSelect,
   onSetTimeRange
 }) => (
-  <div>
+  <div className='chartContainer'>
     <ChartControls
       dataSourceOptions={dataSourceOptions}
       chartTypeOptions={chartTypeOptions}

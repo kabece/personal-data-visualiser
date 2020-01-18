@@ -1,6 +1,7 @@
 import React from 'react'
 import {func} from 'prop-types'
 
+import ChartPlaceholder from '../chartPlaceholder/chartPlaceholder.presenter'
 import LineChartWrapper from '../../lineChartWrapper/lineChartWrapper.presenter'
 import {chartTypes, chartShape} from '../../../index.shapes'
 
@@ -13,17 +14,19 @@ const ChartTypeSwitcher = ({
   switch (chart.chartType) {
     case chartTypes.lineChart:
       return (
-        <LineChartWrapper
-          dataSeries={chart.dataSeries}
-          chartTitle={chart.title}
-          timeRange={chart.timeRange}
-          onSetTimeRange={onSetTimeRange}
-          key={chart.id}
-        />
+        <div className='chartWrapper'>
+          <LineChartWrapper
+            dataSeries={chart.dataSeries}
+            chartTitle={chart.title}
+            timeRange={chart.timeRange}
+            onSetTimeRange={onSetTimeRange}
+            key={chart.id}
+          />
+        </div>
       )
     default:
       return (
-        <div>Loading...</div>
+        <ChartPlaceholder />
       )
   }
 }
