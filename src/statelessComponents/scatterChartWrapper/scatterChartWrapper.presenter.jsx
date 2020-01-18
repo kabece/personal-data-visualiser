@@ -5,13 +5,13 @@ import {
   ChartContainer,
   ChartRow,
   YAxis,
-  LineChart,
+  ScatterChart,
   styler
 } from 'react-timeseries-charts'
 
 import {timeRangeShape} from '../../index.shapes'
 
-const LineChartWrapper = ({
+const ScatterChartWrapper = ({
   dataSeries,
   timeRange,
   chartTitle,
@@ -46,13 +46,12 @@ const LineChartWrapper = ({
         type='linear'
       />
       <Charts>
-        <LineChart
+        <ScatterChart
           key='value'
           axis='value'
           series={dataSeries}
           columns={['value']}
-          style={styler}
-          interpolation='curveBasis'
+          // style={styler}
         />
       </Charts>
       <YAxis
@@ -67,11 +66,11 @@ const LineChartWrapper = ({
   </ChartContainer>
 )
 
-LineChartWrapper.propTypes = {
+ScatterChartWrapper.propTypes = {
   dataSeries: object.isRequired, // FIXME:
   timeRange: timeRangeShape.isRequired,
   chartTitle: string.isRequired,
   onSetTimeRange: func.isRequired
 }
 
-export default LineChartWrapper
+export default ScatterChartWrapper

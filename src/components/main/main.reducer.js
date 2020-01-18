@@ -34,6 +34,11 @@ const initialState = {
       displayName: 'Line Chart',
       value: chartTypes.lineChart,
       dataType: dataTypes.numerical
+    },
+    {
+      displayName: 'Scatter Chart',
+      value: chartTypes.scatterChart,
+      dataType: dataTypes.numerical
     }
   ]
 }

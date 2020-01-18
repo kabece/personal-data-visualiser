@@ -3,6 +3,7 @@ import {func} from 'prop-types'
 
 import ChartPlaceholder from '../chartPlaceholder/chartPlaceholder.presenter'
 import LineChartWrapper from '../../lineChartWrapper/lineChartWrapper.presenter'
+import ScatterChartWrapper from '../../scatterChartWrapper/scatterChartWrapper.presenter'
 import {chartTypes, chartShape} from '../../../index.shapes'
 
 const ChartTypeSwitcher = ({
@@ -16,6 +17,19 @@ const ChartTypeSwitcher = ({
       return (
         <div className='chartWrapper'>
           <LineChartWrapper
+            dataSeries={chart.dataSeries}
+            chartTitle={chart.title}
+            timeRange={chart.timeRange}
+            onSetTimeRange={onSetTimeRange}
+            key={chart.id}
+          />
+        </div>
+      )
+
+    case chartTypes.scatterChart:
+      return (
+        <div className='chartWrapper'>
+          <ScatterChartWrapper
             dataSeries={chart.dataSeries}
             chartTitle={chart.title}
             timeRange={chart.timeRange}
