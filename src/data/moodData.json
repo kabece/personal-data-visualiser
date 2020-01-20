@@ -1,0 +1,3098 @@
+[
+    {
+        "full_date": "2020-01-21",
+        "date": "21 Jan",
+        "weekday": "Tuesday",
+        "time": "09.50",
+        "mood": "normal",
+        "activities": "meditation | music | thesis | getting shit done | planning tasks for the day | driving"
+    },
+    {
+        "full_date": "2020-01-20",
+        "date": "20 Jan",
+        "weekday": "Monday",
+        "time": "20.51",
+        "mood": "good",
+        "activities": "self-development reading | friends live | drinking | good meal | deep focus | thesis | getting shit done | driving"
+    },
+    {
+        "full_date": "2020-01-20",
+        "date": "20 Jan",
+        "weekday": "Monday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "music | deep focus | work | driving"
+    },
+    {
+        "full_date": "2020-01-20",
+        "date": "20 Jan",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "friends online | walk | deep focus | work | thesis | getting shit done | planning tasks for the day | overthinking | lots of social media"
+    },
+    {
+        "full_date": "2020-01-20",
+        "date": "20 Jan",
+        "weekday": "Monday",
+        "time": "09.00",
+        "mood": "normal",
+        "activities": "meditation | music | driving"
+    },
+    {
+        "full_date": "2020-01-19",
+        "date": "19 Jan",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "music | walk | deep focus | work | thesis | chores | cooking"
+    },
+    {
+        "full_date": "2020-01-17",
+        "date": "17 Jan",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "meditation | friends online | music | deep focus | work | thesis | planning tasks for the day | driving"
+    },
+    {
+        "full_date": "2020-01-16",
+        "date": "16 Jan",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "gym | music | cooking | driving"
+    },
+    {
+        "full_date": "2020-01-16",
+        "date": "16 Jan",
+        "weekday": "Thursday",
+        "time": "17.00",
+        "mood": "normal",
+        "activities": "music | deep focus | work | thesis | getting shit done | driving"
+    },
+    {
+        "full_date": "2020-01-16",
+        "date": "16 Jan",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "normal",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2020-01-15",
+        "date": "15 Jan",
+        "weekday": "Wednesday",
+        "time": "20.16",
+        "mood": "good",
+        "activities": "meditation | self-development reading | friends online | date | good meal | netflix  | music | deep focus | work | thesis | getting shit done | planning tasks for the day | driving"
+    },
+    {
+        "full_date": "2020-01-14",
+        "date": "14 Jan",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "meditation | deep focus | work | thesis | driving"
+    },
+    {
+        "full_date": "2019-12-19",
+        "date": "19 Dec",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "meditation | music | driving"
+    },
+    {
+        "full_date": "2019-12-18",
+        "date": "18 Dec",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "calm",
+        "activities": "gym | self-development reading | friends live | friends online | good meal | music | deep focus | thesis | cooking | driving"
+    },
+    {
+        "full_date": "2019-12-18",
+        "date": "18 Dec",
+        "weekday": "Wednesday",
+        "time": "12.03",
+        "mood": "normal",
+        "activities": "music | deep focus | work | driving"
+    },
+    {
+        "full_date": "2019-12-17",
+        "date": "17 Dec",
+        "weekday": "Tuesday",
+        "time": "12.02",
+        "mood": "rad",
+        "activities": "date | drinking"
+    },
+    {
+        "full_date": "2019-12-16",
+        "date": "16 Dec",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-12-16",
+        "date": "16 Dec",
+        "weekday": "Monday",
+        "time": "09.00",
+        "mood": "good",
+        "activities": "music | getting shit done | planning tasks for the day | driving"
+    },
+    {
+        "full_date": "2019-12-15",
+        "date": "15 Dec",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-12-14",
+        "date": "14 Dec",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "friends live | drinking | hiking | driving"
+    },
+    {
+        "full_date": "2019-12-14",
+        "date": "14 Dec",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "music | walk | shopping"
+    },
+    {
+        "full_date": "2019-12-13",
+        "date": "13 Dec",
+        "weekday": "Friday",
+        "time": "22.00",
+        "mood": "rad",
+        "activities": "date | drinking"
+    },
+    {
+        "full_date": "2019-12-13",
+        "date": "13 Dec",
+        "weekday": "Friday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "journaling | music | deep focus | work | driving"
+    },
+    {
+        "full_date": "2019-12-13",
+        "date": "13 Dec",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "deep focus | work | thesis | getting shit done"
+    },
+    {
+        "full_date": "2019-12-13",
+        "date": "13 Dec",
+        "weekday": "Friday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation | music | driving"
+    },
+    {
+        "full_date": "2019-12-12",
+        "date": "12 Dec",
+        "weekday": "Thursday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "journaling | self-development reading | friends online | walk | getting shit done"
+    },
+    {
+        "full_date": "2019-12-12",
+        "date": "12 Dec",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "gym | family | music | chores | cooking | driving"
+    },
+    {
+        "full_date": "2019-12-12",
+        "date": "12 Dec",
+        "weekday": "Thursday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day | driving"
+    },
+    {
+        "full_date": "2019-12-12",
+        "date": "12 Dec",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "deep focus | work"
+    },
+    {
+        "full_date": "2019-12-12",
+        "date": "12 Dec",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation | music | driving"
+    },
+    {
+        "full_date": "2019-12-11",
+        "date": "11 Dec",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "self-development reading | friends online | music | deep focus | thesis"
+    },
+    {
+        "full_date": "2019-12-11",
+        "date": "11 Dec",
+        "weekday": "Wednesday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "music | deep focus | work | driving"
+    },
+    {
+        "full_date": "2019-12-11",
+        "date": "11 Dec",
+        "weekday": "Wednesday",
+        "time": "12.20",
+        "mood": "motivated",
+        "activities": "deep focus | work | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-12-11",
+        "date": "11 Dec",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "motivated",
+        "activities": "meditation | music | driving"
+    },
+    {
+        "full_date": "2019-12-10",
+        "date": "10 Dec",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "gym | self-development reading | friends live | deep focus | thesis | driving"
+    },
+    {
+        "full_date": "2019-12-10",
+        "date": "10 Dec",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "journaling | music | deep focus | work | getting shit done | planning tasks for the day | driving"
+    },
+    {
+        "full_date": "2019-12-10",
+        "date": "10 Dec",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "normal",
+        "activities": "meditation | driving"
+    },
+    {
+        "full_date": "2019-12-09",
+        "date": "9 Dec",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "calm",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-12-08",
+        "date": "8 Dec",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "music | gaming | deep focus | work | thesis"
+    },
+    {
+        "full_date": "2019-12-08",
+        "date": "8 Dec",
+        "weekday": "Sunday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | friends live | netflix  | music | deep focus | thesis | getting shit done | chores | overthinking | worrying about the future | dwelling on the past | victimizing myself | cooking"
+    },
+    {
+        "full_date": "2019-12-08",
+        "date": "8 Dec",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-12-07",
+        "date": "7 Dec",
+        "weekday": "Saturday",
+        "time": "17.00",
+        "mood": "rad",
+        "activities": "party | drinking"
+    },
+    {
+        "full_date": "2019-12-06",
+        "date": "6 Dec",
+        "weekday": "Friday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-12-06",
+        "date": "6 Dec",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "confident",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-12-05",
+        "date": "5 Dec",
+        "weekday": "Thursday",
+        "time": "22.30",
+        "mood": "calm",
+        "activities": "gaming"
+    },
+    {
+        "full_date": "2019-12-05",
+        "date": "5 Dec",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "meditation | self-development reading | family | friends online | music | deep focus | work | thesis | getting shit done | planning tasks for the day | cooking | driving"
+    },
+    {
+        "full_date": "2019-12-05",
+        "date": "5 Dec",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "calm",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-12-04",
+        "date": "4 Dec",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "calm",
+        "activities": "gym | self-development reading | family | music | gaming"
+    },
+    {
+        "full_date": "2019-12-04",
+        "date": "4 Dec",
+        "weekday": "Wednesday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "music | deep focus | work"
+    },
+    {
+        "full_date": "2019-12-04",
+        "date": "4 Dec",
+        "weekday": "Wednesday",
+        "time": "12.01",
+        "mood": "tired",
+        "activities": "deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-12-04",
+        "date": "4 Dec",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation | netflix  | music"
+    },
+    {
+        "full_date": "2019-12-03",
+        "date": "3 Dec",
+        "weekday": "Tuesday",
+        "time": "22.00",
+        "mood": "calm",
+        "activities": "friends live | good meal | netflix  | gaming | deep focus | thesis | getting shit done | chores | cooking"
+    },
+    {
+        "full_date": "2019-12-03",
+        "date": "3 Dec",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "tired",
+        "activities": "deep focus | work"
+    },
+    {
+        "full_date": "2019-12-03",
+        "date": "3 Dec",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-12-03",
+        "date": "3 Dec",
+        "weekday": "Tuesday",
+        "time": "08.41",
+        "mood": "normal",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-12-02",
+        "date": "2 Dec",
+        "weekday": "Monday",
+        "time": "18.45",
+        "mood": "tired",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-12-01",
+        "date": "1 Dec",
+        "weekday": "Sunday",
+        "time": "17.00",
+        "mood": "tired",
+        "activities": "meditation | journaling | self-development reading | chores | cooking"
+    },
+    {
+        "full_date": "2019-12-01",
+        "date": "1 Dec",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | friends live | getting shit done | planning tasks for the day | worrying about the future | cooking"
+    },
+    {
+        "full_date": "2019-11-30",
+        "date": "30 Nov",
+        "weekday": "Saturday",
+        "time": "17.00",
+        "mood": "rad",
+        "activities": "friends live | drinking"
+    },
+    {
+        "full_date": "2019-11-30",
+        "date": "30 Nov",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "confident",
+        "activities": "meditation | gym | self-development reading | friends live"
+    },
+    {
+        "full_date": "2019-11-29",
+        "date": "29 Nov",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "confident",
+        "activities": "friends live | friends online | drinking | music | walk | deep focus | work | shopping"
+    },
+    {
+        "full_date": "2019-11-29",
+        "date": "29 Nov",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "calm",
+        "activities": "journaling | friends online | deep focus | work | getting shit done | chores | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-29",
+        "date": "29 Nov",
+        "weekday": "Friday",
+        "time": "08.26",
+        "mood": "normal",
+        "activities": "meditation | self-development reading"
+    },
+    {
+        "full_date": "2019-11-28",
+        "date": "28 Nov",
+        "weekday": "Thursday",
+        "time": "22.30",
+        "mood": "tired",
+        "activities": "gaming | walk"
+    },
+    {
+        "full_date": "2019-11-28",
+        "date": "28 Nov",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-28",
+        "date": "28 Nov",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "demotivated",
+        "activities": "deep focus | work | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-28",
+        "date": "28 Nov",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "normal",
+        "activities": "meditation | self-development reading"
+    },
+    {
+        "full_date": "2019-11-27",
+        "date": "27 Nov",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "calm",
+        "activities": "friends live | good meal | gaming"
+    },
+    {
+        "full_date": "2019-11-27",
+        "date": "27 Nov",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "rad",
+        "activities": "gym | friends live | cooking"
+    },
+    {
+        "full_date": "2019-11-27",
+        "date": "27 Nov",
+        "weekday": "Wednesday",
+        "time": "17.00",
+        "mood": "meh",
+        "activities": "journaling | music | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-27",
+        "date": "27 Nov",
+        "weekday": "Wednesday",
+        "time": "12.02",
+        "mood": "normal",
+        "activities": "meditation | journaling | self-development reading | deep focus | work | thesis | getting shit done | chores | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-26",
+        "date": "26 Nov",
+        "weekday": "Tuesday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "family | deep focus | thesis"
+    },
+    {
+        "full_date": "2019-11-26",
+        "date": "26 Nov",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "self-development reading | friends live | thesis | getting shit done | cooking | ableton"
+    },
+    {
+        "full_date": "2019-11-26",
+        "date": "26 Nov",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-26",
+        "date": "26 Nov",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "motivated",
+        "activities": "self-development reading | family | deep focus | work | thesis | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-26",
+        "date": "26 Nov",
+        "weekday": "Tuesday",
+        "time": "08.03",
+        "mood": "calm",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-11-25",
+        "date": "25 Nov",
+        "weekday": "Monday",
+        "time": "22.30",
+        "mood": "calm",
+        "activities": "meditation | journaling | self-development reading | friends online | gaming | cooking"
+    },
+    {
+        "full_date": "2019-11-25",
+        "date": "25 Nov",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | gym | friends online | music | walk"
+    },
+    {
+        "full_date": "2019-11-25",
+        "date": "25 Nov",
+        "weekday": "Monday",
+        "time": "12.06",
+        "mood": "good",
+        "activities": "deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-25",
+        "date": "25 Nov",
+        "weekday": "Monday",
+        "time": "08.31",
+        "mood": "motivated",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-24",
+        "date": "24 Nov",
+        "weekday": "Sunday",
+        "time": "22.22",
+        "mood": "calm",
+        "activities": "self-development reading | family | gaming | thesis | chores"
+    },
+    {
+        "full_date": "2019-11-24",
+        "date": "24 Nov",
+        "weekday": "Sunday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "meditation | journaling | self-development reading | music | getting shit done | chores | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-24",
+        "date": "24 Nov",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "calm",
+        "activities": "meditation | music | work | getting shit done | chores | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-23",
+        "date": "23 Nov",
+        "weekday": "Saturday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "meditation | journaling | friends live | drinking | music | walk | hiking"
+    },
+    {
+        "full_date": "2019-11-22",
+        "date": "22 Nov",
+        "weekday": "Friday",
+        "time": "22.30",
+        "mood": "calm",
+        "activities": "meditation | journaling | self-development reading | friends online | drinking | good meal | music | walk | hiking | chores"
+    },
+    {
+        "full_date": "2019-11-22",
+        "date": "22 Nov",
+        "weekday": "Friday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": "drinking | music | work"
+    },
+    {
+        "full_date": "2019-11-22",
+        "date": "22 Nov",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "music | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-21",
+        "date": "21 Nov",
+        "weekday": "Thursday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "friends online | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-21",
+        "date": "21 Nov",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "calm",
+        "activities": "journaling | friends online | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-21",
+        "date": "21 Nov",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-11-20",
+        "date": "20 Nov",
+        "weekday": "Wednesday",
+        "time": "23.03",
+        "mood": "confident",
+        "activities": "gym | friends online | music"
+    },
+    {
+        "full_date": "2019-11-20",
+        "date": "20 Nov",
+        "weekday": "Wednesday",
+        "time": "17.00",
+        "mood": "confident",
+        "activities": "journaling | friends online | music | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-20",
+        "date": "20 Nov",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-20",
+        "date": "20 Nov",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "calm",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-11-19",
+        "date": "19 Nov",
+        "weekday": "Tuesday",
+        "time": "21.08",
+        "mood": "good",
+        "activities": "journaling | self-development reading | family | friends online | thesis"
+    },
+    {
+        "full_date": "2019-11-19",
+        "date": "19 Nov",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "calm",
+        "activities": "music | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-19",
+        "date": "19 Nov",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "motivated",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-19",
+        "date": "19 Nov",
+        "weekday": "Tuesday",
+        "time": "09.52",
+        "mood": "meh",
+        "activities": "meditation | chores"
+    },
+    {
+        "full_date": "2019-11-18",
+        "date": "18 Nov",
+        "weekday": "Monday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "journaling | gym | self-development reading | music | walk"
+    },
+    {
+        "full_date": "2019-11-18",
+        "date": "18 Nov",
+        "weekday": "Monday",
+        "time": "17.00",
+        "mood": "normal",
+        "activities": "music | deep focus | work"
+    },
+    {
+        "full_date": "2019-11-18",
+        "date": "18 Nov",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "friends online | music | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo | overthinking | dwelling on the past | mindreading"
+    },
+    {
+        "full_date": "2019-11-18",
+        "date": "18 Nov",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "meditation | self-development reading"
+    },
+    {
+        "full_date": "2019-11-17",
+        "date": "17 Nov",
+        "weekday": "Sunday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-16",
+        "date": "16 Nov",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "meh",
+        "activities": "date | good meal"
+    },
+    {
+        "full_date": "2019-11-16",
+        "date": "16 Nov",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "hopeful",
+        "activities": "gym | self-development reading | friends live | music | walk"
+    },
+    {
+        "full_date": "2019-11-15",
+        "date": "15 Nov",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-15",
+        "date": "15 Nov",
+        "weekday": "Friday",
+        "time": "08.00",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-14",
+        "date": "14 Nov",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "bad",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-14",
+        "date": "14 Nov",
+        "weekday": "Thursday",
+        "time": "17.00",
+        "mood": "bad",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-14",
+        "date": "14 Nov",
+        "weekday": "Thursday",
+        "time": "15.04",
+        "mood": "emotional hijacking",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-14",
+        "date": "14 Nov",
+        "weekday": "Thursday",
+        "time": "09.46",
+        "mood": "hopeful",
+        "activities": "meditation | thesis"
+    },
+    {
+        "full_date": "2019-11-13",
+        "date": "13 Nov",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "putting up a fight",
+        "activities": "journaling | friends live | friends online"
+    },
+    {
+        "full_date": "2019-11-13",
+        "date": "13 Nov",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "confused",
+        "activities": "journaling | music | deep focus | work | thesis | chores | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-13",
+        "date": "13 Nov",
+        "weekday": "Wednesday",
+        "time": "07.37",
+        "mood": "hopeful",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-11-12",
+        "date": "12 Nov",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-12",
+        "date": "12 Nov",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "bad",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-10",
+        "date": "10 Nov",
+        "weekday": "Sunday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-08",
+        "date": "8 Nov",
+        "weekday": "Friday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-07",
+        "date": "7 Nov",
+        "weekday": "Thursday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-07",
+        "date": "7 Nov",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "bad",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-05",
+        "date": "5 Nov",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-04",
+        "date": "4 Nov",
+        "weekday": "Monday",
+        "time": "21.38",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-04",
+        "date": "4 Nov",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "bad",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-03",
+        "date": "3 Nov",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "rad",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-02",
+        "date": "2 Nov",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "excited",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-11-02",
+        "date": "2 Nov",
+        "weekday": "Saturday",
+        "time": "08.00",
+        "mood": "excited",
+        "activities": "meditation | self-development reading | family | music"
+    },
+    {
+        "full_date": "2019-11-01",
+        "date": "1 Nov",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "confident",
+        "activities": "journaling | self-development reading | friends live | music"
+    },
+    {
+        "full_date": "2019-11-01",
+        "date": "1 Nov",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "journaling | friends online | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-11-01",
+        "date": "1 Nov",
+        "weekday": "Friday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation | netflix "
+    },
+    {
+        "full_date": "2019-10-31",
+        "date": "31 Oct",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-31",
+        "date": "31 Oct",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "calm",
+        "activities": "meditation | friends online | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-30",
+        "date": "30 Oct",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "gym | friends live | good meal | music | walk | deep focus | work"
+    },
+    {
+        "full_date": "2019-10-30",
+        "date": "30 Oct",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "confident",
+        "activities": "friends online | music | deep focus | work | thesis | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-30",
+        "date": "30 Oct",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation | friends online | music"
+    },
+    {
+        "full_date": "2019-10-29",
+        "date": "29 Oct",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "calm",
+        "activities": "meditation | journaling | music | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-10-28",
+        "date": "28 Oct",
+        "weekday": "Monday",
+        "time": "21.58",
+        "mood": "meh",
+        "activities": "meditation | journaling | self-development reading | friends live | drinking | music | walk | deep focus | getting shit done | chores | planning tasks for the day | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking"
+    },
+    {
+        "full_date": "2019-10-27",
+        "date": "27 Oct",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-10-26",
+        "date": "26 Oct",
+        "weekday": "Saturday",
+        "time": "17.00",
+        "mood": "meh",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-10-25",
+        "date": "25 Oct",
+        "weekday": "Friday",
+        "time": "17.00",
+        "mood": "putting up a fight",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-25",
+        "date": "25 Oct",
+        "weekday": "Friday",
+        "time": "12.32",
+        "mood": "putting up a fight",
+        "activities": "meditation | netflix  | music | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-10-24",
+        "date": "24 Oct",
+        "weekday": "Thursday",
+        "time": "22.30",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-24",
+        "date": "24 Oct",
+        "weekday": "Thursday",
+        "time": "17.00",
+        "mood": "calm",
+        "activities": "music | deep focus | work"
+    },
+    {
+        "full_date": "2019-10-24",
+        "date": "24 Oct",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "calm",
+        "activities": "meditation | self-development reading | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-23",
+        "date": "23 Oct",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "confident",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-23",
+        "date": "23 Oct",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "journaling | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-23",
+        "date": "23 Oct",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "hopeful",
+        "activities": "meditation | netflix  | music | thinking about Cleo | overthinking | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-10-22",
+        "date": "22 Oct",
+        "weekday": "Tuesday",
+        "time": "22.25",
+        "mood": "calm",
+        "activities": "journaling | self-development reading | friends live | good meal | netflix  | music | walk | getting shit done | chores"
+    },
+    {
+        "full_date": "2019-10-22",
+        "date": "22 Oct",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "motivated",
+        "activities": "journaling | music | deep focus | work | thesis | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-22",
+        "date": "22 Oct",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "hopeful",
+        "activities": "meditation | friends online | music"
+    },
+    {
+        "full_date": "2019-10-21",
+        "date": "21 Oct",
+        "weekday": "Monday",
+        "time": "22.30",
+        "mood": "motivated",
+        "activities": "journaling | gym | self-development reading | family | friends live | friends online | good meal | music | walk"
+    },
+    {
+        "full_date": "2019-10-21",
+        "date": "21 Oct",
+        "weekday": "Monday",
+        "time": "17.00",
+        "mood": "putting up a fight",
+        "activities": "music | deep focus | work | getting shit done | chores | planning tasks for the day | overthinking | worrying about the future | obsessing | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | magnification | emotional reasoning | labelling | personalization"
+    },
+    {
+        "full_date": "2019-10-21",
+        "date": "21 Oct",
+        "weekday": "Monday",
+        "time": "07.47",
+        "mood": "confident",
+        "activities": "meditation | thinking about Cleo | overthinking | dwelling on the past | victimizing myself | mindreading | emotional reasoning | should statements"
+    },
+    {
+        "full_date": "2019-10-20",
+        "date": "20 Oct",
+        "weekday": "Sunday",
+        "time": "22.21",
+        "mood": "good",
+        "activities": "friends live | drinking"
+    },
+    {
+        "full_date": "2019-10-20",
+        "date": "20 Oct",
+        "weekday": "Sunday",
+        "time": "17.13",
+        "mood": "good",
+        "activities": "friends live | drinking"
+    },
+    {
+        "full_date": "2019-10-20",
+        "date": "20 Oct",
+        "weekday": "Sunday",
+        "time": "12.11",
+        "mood": "meh",
+        "activities": "meditation | thinking about Cleo | worrying about the future | victimizing myself"
+    },
+    {
+        "full_date": "2019-10-19",
+        "date": "19 Oct",
+        "weekday": "Saturday",
+        "time": "16.48",
+        "mood": "confident",
+        "activities": "meditation | gym | friends online | good meal | music | walk | getting shit done | chores | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-18",
+        "date": "18 Oct",
+        "weekday": "Friday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "journaling | friends live | drinking | good meal | music | deep focus | work"
+    },
+    {
+        "full_date": "2019-10-18",
+        "date": "18 Oct",
+        "weekday": "Friday",
+        "time": "12.31",
+        "mood": "good",
+        "activities": "journaling | friends live | friends online | music | deep focus | work | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-18",
+        "date": "18 Oct",
+        "weekday": "Friday",
+        "time": "08.30",
+        "mood": "hopeful",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-10-17",
+        "date": "17 Oct",
+        "weekday": "Thursday",
+        "time": "22.30",
+        "mood": "confident",
+        "activities": "journaling | gym | self-development reading | family | music | getting shit done | chores"
+    },
+    {
+        "full_date": "2019-10-17",
+        "date": "17 Oct",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "motivated",
+        "activities": "deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-17",
+        "date": "17 Oct",
+        "weekday": "Thursday",
+        "time": "08.59",
+        "mood": "putting up a fight",
+        "activities": "meditation | stepping back from emotions | music | thinking about Cleo | overthinking | lots of social media | worrying about the future | dwelling on the past | obsessing | victimizing myself | mindreading | fortunetelling | overgeneralization | magnification | personalization"
+    },
+    {
+        "full_date": "2019-10-16",
+        "date": "16 Oct",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "hopeful",
+        "activities": "meditation | self-development reading | friends online | good meal | music | getting shit done | chores"
+    },
+    {
+        "full_date": "2019-10-16",
+        "date": "16 Oct",
+        "weekday": "Wednesday",
+        "time": "17.11",
+        "mood": "motivated",
+        "activities": "journaling | stepping back from emotions | music | deep focus | work | thinking about Cleo | all-or-nothing thinking"
+    },
+    {
+        "full_date": "2019-10-16",
+        "date": "16 Oct",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "journaling | stepping back from emotions | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo | overthinking | dwelling on the past | victimizing myself"
+    },
+    {
+        "full_date": "2019-10-16",
+        "date": "16 Oct",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-15",
+        "date": "15 Oct",
+        "weekday": "Tuesday",
+        "time": "17.00",
+        "mood": "meh",
+        "activities": "journaling | gym | stepping back from emotions | music | deep focus | work | thinking about Cleo | overthinking | worrying about the future | victimizing myself | fortunetelling | all-or-nothing thinking | mental filter | should statements"
+    },
+    {
+        "full_date": "2019-10-15",
+        "date": "15 Oct",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "journaling | deep focus | work"
+    },
+    {
+        "full_date": "2019-10-15",
+        "date": "15 Oct",
+        "weekday": "Tuesday",
+        "time": "09.33",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | music | planning tasks for the day | thinking about Cleo | overthinking | victimizing myself | mindreading"
+    },
+    {
+        "full_date": "2019-10-14",
+        "date": "14 Oct",
+        "weekday": "Monday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "gym | friends live | good meal | music | getting shit done | chores"
+    },
+    {
+        "full_date": "2019-10-14",
+        "date": "14 Oct",
+        "weekday": "Monday",
+        "time": "17.00",
+        "mood": "tired",
+        "activities": "music | deep focus | work | getting shit done | thinking about Cleo | dwelling on the past | victimizing myself | mindreading | personalization"
+    },
+    {
+        "full_date": "2019-10-14",
+        "date": "14 Oct",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "journaling | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-14",
+        "date": "14 Oct",
+        "weekday": "Monday",
+        "time": "08.43",
+        "mood": "motivated",
+        "activities": "meditation | good meal | music | thinking about Cleo | dwelling on the past"
+    },
+    {
+        "full_date": "2019-10-13",
+        "date": "13 Oct",
+        "weekday": "Sunday",
+        "time": "16.45",
+        "mood": "calm",
+        "activities": "journaling | self-development reading | music | walk | getting shit done | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-10-13",
+        "date": "13 Oct",
+        "weekday": "Sunday",
+        "time": "08.43",
+        "mood": "calm",
+        "activities": "meditation | journaling | self-development reading | friends live | good meal | netflix  | music | walk | getting shit done"
+    },
+    {
+        "full_date": "2019-10-12",
+        "date": "12 Oct",
+        "weekday": "Saturday",
+        "time": "17.00",
+        "mood": "meh",
+        "activities": "meditation | journaling | friends live | good meal | getting shit done | thinking about Cleo | all-or-nothing thinking | mental filter | magnification | emotional reasoning | should statements"
+    },
+    {
+        "full_date": "2019-10-12",
+        "date": "12 Oct",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "netflix  | music | chores | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-10-11",
+        "date": "11 Oct",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | music | deep focus | work | getting shit done | chores | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-10-11",
+        "date": "11 Oct",
+        "weekday": "Friday",
+        "time": "08.46",
+        "mood": "good",
+        "activities": "meditation | music"
+    },
+    {
+        "full_date": "2019-10-10",
+        "date": "10 Oct",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "meditation | friends live | music | chores"
+    },
+    {
+        "full_date": "2019-10-10",
+        "date": "10 Oct",
+        "weekday": "Thursday",
+        "time": "18.54",
+        "mood": "good",
+        "activities": "meditation | journaling | friends live | music | deep focus | work | chores | thinking about Cleo | overthinking | dwelling on the past"
+    },
+    {
+        "full_date": "2019-10-10",
+        "date": "10 Oct",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "journaling | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-10",
+        "date": "10 Oct",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "normal",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-09",
+        "date": "9 Oct",
+        "weekday": "Wednesday",
+        "time": "17.00",
+        "mood": "meh",
+        "activities": "meditation | music | deep focus | work | worrying about the future | mindreading"
+    },
+    {
+        "full_date": "2019-10-09",
+        "date": "9 Oct",
+        "weekday": "Wednesday",
+        "time": "14.38",
+        "mood": "confident",
+        "activities": "journaling | music | deep focus | work | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-10-09",
+        "date": "9 Oct",
+        "weekday": "Wednesday",
+        "time": "08.22",
+        "mood": "confident",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-08",
+        "date": "8 Oct",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | netflix  | music | walk | chores"
+    },
+    {
+        "full_date": "2019-10-08",
+        "date": "8 Oct",
+        "weekday": "Tuesday",
+        "time": "17.27",
+        "mood": "good",
+        "activities": "journaling | music | deep focus | work"
+    },
+    {
+        "full_date": "2019-10-08",
+        "date": "8 Oct",
+        "weekday": "Tuesday",
+        "time": "12.32",
+        "mood": "confident",
+        "activities": "journaling | deep focus | work"
+    },
+    {
+        "full_date": "2019-10-08",
+        "date": "8 Oct",
+        "weekday": "Tuesday",
+        "time": "08.16",
+        "mood": "confident",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-07",
+        "date": "7 Oct",
+        "weekday": "Monday",
+        "time": "21.43",
+        "mood": "meh",
+        "activities": "meditation | journaling | thinking about Cleo | mindreading"
+    },
+    {
+        "full_date": "2019-10-07",
+        "date": "7 Oct",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-07",
+        "date": "7 Oct",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "excited",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-06",
+        "date": "6 Oct",
+        "weekday": "Sunday",
+        "time": "21.00",
+        "mood": "good",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-05",
+        "date": "5 Oct",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-05",
+        "date": "5 Oct",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-04",
+        "date": "4 Oct",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-04",
+        "date": "4 Oct",
+        "weekday": "Friday",
+        "time": "16.00",
+        "mood": "excited",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-04",
+        "date": "4 Oct",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-03",
+        "date": "3 Oct",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "emotionally tired",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-03",
+        "date": "3 Oct",
+        "weekday": "Thursday",
+        "time": "16.00",
+        "mood": "emotional hijacking",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-03",
+        "date": "3 Oct",
+        "weekday": "Thursday",
+        "time": "10.00",
+        "mood": "hopeful",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-02",
+        "date": "2 Oct",
+        "weekday": "Wednesday",
+        "time": "16.00",
+        "mood": "hopeful",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-02",
+        "date": "2 Oct",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-10-01",
+        "date": "1 Oct",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "excited",
+        "activities": "meditation | journaling"
+    },
+    {
+        "full_date": "2019-10-01",
+        "date": "1 Oct",
+        "weekday": "Tuesday",
+        "time": "07.59",
+        "mood": "lonely",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-30",
+        "date": "30 Sep",
+        "weekday": "Monday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-09-29",
+        "date": "29 Sep",
+        "weekday": "Sunday",
+        "time": "16.00",
+        "mood": "rad",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-09-28",
+        "date": "28 Sep",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-09-28",
+        "date": "28 Sep",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-27",
+        "date": "27 Sep",
+        "weekday": "Friday",
+        "time": "17.55",
+        "mood": "good",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-09-27",
+        "date": "27 Sep",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "putting up a fight",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-26",
+        "date": "26 Sep",
+        "weekday": "Thursday",
+        "time": "21.00",
+        "mood": "rad",
+        "activities": "meditation | friends live"
+    },
+    {
+        "full_date": "2019-09-26",
+        "date": "26 Sep",
+        "weekday": "Thursday",
+        "time": "16.00",
+        "mood": "putting up a fight",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-26",
+        "date": "26 Sep",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-25",
+        "date": "25 Sep",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-25",
+        "date": "25 Sep",
+        "weekday": "Wednesday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "journaling | stepping back from emotions | friends live"
+    },
+    {
+        "full_date": "2019-09-25",
+        "date": "25 Sep",
+        "weekday": "Wednesday",
+        "time": "12.29",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | friends live | good meal | thinking about Cleo | overthinking | mindreading"
+    },
+    {
+        "full_date": "2019-09-25",
+        "date": "25 Sep",
+        "weekday": "Wednesday",
+        "time": "10.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-24",
+        "date": "24 Sep",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "friends live"
+    },
+    {
+        "full_date": "2019-09-24",
+        "date": "24 Sep",
+        "weekday": "Tuesday",
+        "time": "17.15",
+        "mood": "good",
+        "activities": "friends live | thinking about Cleo | mindreading"
+    },
+    {
+        "full_date": "2019-09-24",
+        "date": "24 Sep",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-24",
+        "date": "24 Sep",
+        "weekday": "Tuesday",
+        "time": "11.07",
+        "mood": "excited",
+        "activities": "meditation"
+    },
+    {
+        "full_date": "2019-09-23",
+        "date": "23 Sep",
+        "weekday": "Monday",
+        "time": "22.30",
+        "mood": "excited",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-23",
+        "date": "23 Sep",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "hopeful",
+        "activities": "self-development reading | netflix  | fiction reading"
+    },
+    {
+        "full_date": "2019-09-23",
+        "date": "23 Sep",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "meditation | journaling | self-development reading | stepping back from emotions | netflix  | fiction reading | music | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-22",
+        "date": "22 Sep",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "self-development reading | netflix  | fiction reading | music | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-22",
+        "date": "22 Sep",
+        "weekday": "Sunday",
+        "time": "16.00",
+        "mood": "hopeful",
+        "activities": "journaling | self-development reading | stepping back from emotions | fiction reading | music | thinking about Cleo | overthinking | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-22",
+        "date": "22 Sep",
+        "weekday": "Sunday",
+        "time": "12.11",
+        "mood": "excited",
+        "activities": "journaling | self-development reading | stepping back from emotions | friends online | music | thinking about Cleo | obsessing | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-22",
+        "date": "22 Sep",
+        "weekday": "Sunday",
+        "time": "08.36",
+        "mood": "putting up a fight",
+        "activities": "meditation | stepping back from emotions | thinking about Cleo | overthinking | lots of social media | dwelling on the past | obsessing | victimizing myself | mindreading | fortunetelling | overgeneralization | mental filter | magnification | emotional reasoning | should statements | personalization"
+    },
+    {
+        "full_date": "2019-09-21",
+        "date": "21 Sep",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "putting up a fight",
+        "activities": "journaling | self-development reading | dealing with feelings | stepping back from emotions | music | thinking about Cleo | overthinking | lots of social media | worrying about the future | dwelling on the past | obsessing | victimizing myself | mindreading | fortunetelling | personalization"
+    },
+    {
+        "full_date": "2019-09-21",
+        "date": "21 Sep",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "putting up a fight",
+        "activities": "self-development reading | dealing with feelings | stepping back from emotions | family | good meal | music | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | emotional reasoning | should statements | personalization"
+    },
+    {
+        "full_date": "2019-09-21",
+        "date": "21 Sep",
+        "weekday": "Saturday",
+        "time": "13.03",
+        "mood": "motivated",
+        "activities": "meditation | stepping back from emotions | family | good meal | getting shit done | chores | thinking about Cleo | lots of social media | worrying about the future | mindreading"
+    },
+    {
+        "full_date": "2019-09-20",
+        "date": "20 Sep",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "family | drinking | good meal | chores"
+    },
+    {
+        "full_date": "2019-09-20",
+        "date": "20 Sep",
+        "weekday": "Friday",
+        "time": "16.00",
+        "mood": "hopeful",
+        "activities": "family | fiction reading | getting shit done | chores"
+    },
+    {
+        "full_date": "2019-09-20",
+        "date": "20 Sep",
+        "weekday": "Friday",
+        "time": "14.18",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | family | fiction reading | music | walk | getting shit done | chores | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-20",
+        "date": "20 Sep",
+        "weekday": "Friday",
+        "time": "08.03",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | dwelling on the past | mindreading | all-or-nothing thinking"
+    },
+    {
+        "full_date": "2019-09-19",
+        "date": "19 Sep",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | dealing with feelings | stepping back from emotions | family | fiction reading | thinking about Cleo | overthinking | dwelling on the past | mindreading | fortunetelling | personalization"
+    },
+    {
+        "full_date": "2019-09-19",
+        "date": "19 Sep",
+        "weekday": "Thursday",
+        "time": "17.00",
+        "mood": "calm",
+        "activities": "meditation | stepping back from emotions | family | fiction reading | music | walk | getting shit done | chores | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-19",
+        "date": "19 Sep",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | worrying about the future | mindreading"
+    },
+    {
+        "full_date": "2019-09-18",
+        "date": "18 Sep",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "motivated",
+        "activities": "meditation | journaling | fiction reading | thinking about Cleo | worrying about the future | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-18",
+        "date": "18 Sep",
+        "weekday": "Wednesday",
+        "time": "18.21",
+        "mood": "good",
+        "activities": "stepping back from emotions | family | fiction reading | music"
+    },
+    {
+        "full_date": "2019-09-18",
+        "date": "18 Sep",
+        "weekday": "Wednesday",
+        "time": "12.23",
+        "mood": "good",
+        "activities": "stepping back from emotions | friends live | thinking about Cleo | overthinking"
+    },
+    {
+        "full_date": "2019-09-18",
+        "date": "18 Sep",
+        "weekday": "Wednesday",
+        "time": "10.00",
+        "mood": "good",
+        "activities": "friends live"
+    },
+    {
+        "full_date": "2019-09-17",
+        "date": "17 Sep",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "self-development reading | friends live | drinking | fiction reading"
+    },
+    {
+        "full_date": "2019-09-17",
+        "date": "17 Sep",
+        "weekday": "Tuesday",
+        "time": "16.44",
+        "mood": "uneasy",
+        "activities": "meditation | stepping back from emotions | fiction reading | music | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | mindreading | fortunetelling | all-or-nothing thinking | emotional reasoning | should statements"
+    },
+    {
+        "full_date": "2019-09-17",
+        "date": "17 Sep",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "hopeful",
+        "activities": "stepping back from emotions | fiction reading | music | thinking about Cleo | mindreading"
+    },
+    {
+        "full_date": "2019-09-17",
+        "date": "17 Sep",
+        "weekday": "Tuesday",
+        "time": "09.50",
+        "mood": "hopeful",
+        "activities": "stepping back from emotions | thinking about Cleo | overthinking | lots of social media | worrying about the future | mindreading | fortunetelling | magnification | should statements"
+    },
+    {
+        "full_date": "2019-09-16",
+        "date": "16 Sep",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "hopeful",
+        "activities": "stepping back from emotions | friends live | fiction reading | music | getting shit done"
+    },
+    {
+        "full_date": "2019-09-16",
+        "date": "16 Sep",
+        "weekday": "Monday",
+        "time": "10.56",
+        "mood": "meh",
+        "activities": "meditation | stepping back from emotions | friends live | planning tasks for the day | thinking about Cleo | overthinking | victimizing myself"
+    },
+    {
+        "full_date": "2019-09-15",
+        "date": "15 Sep",
+        "weekday": "Sunday",
+        "time": "19.23",
+        "mood": "emotionally tired",
+        "activities": "meditation | friends live | drinking | getting shit done | chores | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | emotional reasoning"
+    },
+    {
+        "full_date": "2019-09-14",
+        "date": "14 Sep",
+        "weekday": "Saturday",
+        "time": "22.30",
+        "mood": "rad",
+        "activities": "friends live | drinking"
+    },
+    {
+        "full_date": "2019-09-14",
+        "date": "14 Sep",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "rad",
+        "activities": "meditation | friends live | drinking"
+    },
+    {
+        "full_date": "2019-09-14",
+        "date": "14 Sep",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-13",
+        "date": "13 Sep",
+        "weekday": "Friday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | music | deep focus | work | getting shit done | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-13",
+        "date": "13 Sep",
+        "weekday": "Friday",
+        "time": "12.25",
+        "mood": "good",
+        "activities": "music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-09-13",
+        "date": "13 Sep",
+        "weekday": "Friday",
+        "time": "08.00",
+        "mood": "normal",
+        "activities": "thinking about Cleo | obsessing | mindreading | personalization"
+    },
+    {
+        "full_date": "2019-09-12",
+        "date": "12 Sep",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | friends live | drinking"
+    },
+    {
+        "full_date": "2019-09-12",
+        "date": "12 Sep",
+        "weekday": "Thursday",
+        "time": "15.23",
+        "mood": "emotional hijacking",
+        "activities": "work | thinking about Cleo | overthinking | worrying about the future | obsessing | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | emotional reasoning | personalization"
+    },
+    {
+        "full_date": "2019-09-12",
+        "date": "12 Sep",
+        "weekday": "Thursday",
+        "time": "12.44",
+        "mood": "good",
+        "activities": "music | deep focus | work"
+    },
+    {
+        "full_date": "2019-09-12",
+        "date": "12 Sep",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "friends live | obsessing"
+    },
+    {
+        "full_date": "2019-09-11",
+        "date": "11 Sep",
+        "weekday": "Wednesday",
+        "time": "22.55",
+        "mood": "emotional hijacking",
+        "activities": "music | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | obsessing | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | overgeneralization | mental filter | disqualifying the positive | magnification | emotional reasoning | labelling"
+    },
+    {
+        "full_date": "2019-09-11",
+        "date": "11 Sep",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "calm",
+        "activities": "journaling | self-development reading | fiction reading | music | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-11",
+        "date": "11 Sep",
+        "weekday": "Wednesday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "family | friends online | netflix  | music | walk | work | getting shit done | chores"
+    },
+    {
+        "full_date": "2019-09-11",
+        "date": "11 Sep",
+        "weekday": "Wednesday",
+        "time": "12.05",
+        "mood": "confident",
+        "activities": "meditation | stepping back from emotions | music | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-09-11",
+        "date": "11 Sep",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | overthinking | worrying about the future | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | magnification | emotional reasoning | personalization"
+    },
+    {
+        "full_date": "2019-09-10",
+        "date": "10 Sep",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | stepping back from emotions | family | fiction reading | walk | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-10",
+        "date": "10 Sep",
+        "weekday": "Tuesday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "stepping back from emotions | fiction reading | deep focus | work | getting shit done | thinking about Cleo | fortunetelling | all-or-nothing thinking | emotional reasoning"
+    },
+    {
+        "full_date": "2019-09-10",
+        "date": "10 Sep",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "motivated",
+        "activities": "meditation | stepping back from emotions | fiction reading | music | deep focus | work | planning tasks for the day | thinking about Cleo | dwelling on the past | victimizing myself"
+    },
+    {
+        "full_date": "2019-09-10",
+        "date": "10 Sep",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "motivated",
+        "activities": "stepping back from emotions | fiction reading | walk | thinking about Cleo | mindreading | fortunetelling | mental filter | personalization"
+    },
+    {
+        "full_date": "2019-09-09",
+        "date": "9 Sep",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | dealing with feelings | stepping back from emotions | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-09",
+        "date": "9 Sep",
+        "weekday": "Monday",
+        "time": "16.02",
+        "mood": "putting up a fight",
+        "activities": "stepping back from emotions | fiction reading | music | deep focus | work | getting shit done | thinking about Cleo | dwelling on the past | all-or-nothing thinking | magnification | emotional reasoning"
+    },
+    {
+        "full_date": "2019-09-09",
+        "date": "9 Sep",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-09",
+        "date": "9 Sep",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | mindreading | fortunetelling | emotional reasoning"
+    },
+    {
+        "full_date": "2019-09-08",
+        "date": "8 Sep",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | journaling | dealing with feelings | family | drinking | good meal | fiction reading | thinking about Cleo | overthinking"
+    },
+    {
+        "full_date": "2019-09-08",
+        "date": "8 Sep",
+        "weekday": "Sunday",
+        "time": "16.00",
+        "mood": "putting up a fight",
+        "activities": "journaling | self-development reading | stepping back from emotions | family | fiction reading | walk | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | overgeneralization | mental filter | emotional reasoning | should statements | personalization"
+    },
+    {
+        "full_date": "2019-09-08",
+        "date": "8 Sep",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "bad",
+        "activities": "fiction reading | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | all-or-nothing thinking | mental filter | personalization"
+    },
+    {
+        "full_date": "2019-09-07",
+        "date": "7 Sep",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "family | drinking"
+    },
+    {
+        "full_date": "2019-09-07",
+        "date": "7 Sep",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "journaling | family | drinking | good meal | fiction reading"
+    },
+    {
+        "full_date": "2019-09-07",
+        "date": "7 Sep",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | self-development reading | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-07",
+        "date": "7 Sep",
+        "weekday": "Saturday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-09-06",
+        "date": "6 Sep",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "putting up a fight",
+        "activities": "journaling | self-development reading | stepping back from emotions | fiction reading | thinking about Cleo | overthinking | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | mental filter | disqualifying the positive | personalization"
+    },
+    {
+        "full_date": "2019-09-06",
+        "date": "6 Sep",
+        "weekday": "Friday",
+        "time": "16.00",
+        "mood": "putting up a fight",
+        "activities": "self-development reading | stepping back from emotions | family | netflix  | fiction reading | work | getting shit done | thinking about Cleo | overthinking | dwelling on the past | victimizing myself | mindreading | fortunetelling | mental filter | personalization"
+    },
+    {
+        "full_date": "2019-09-06",
+        "date": "6 Sep",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | music | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo | worrying about the future | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-06",
+        "date": "6 Sep",
+        "weekday": "Friday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | dwelling on the past | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-05",
+        "date": "5 Sep",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "hopeful",
+        "activities": "journaling | self-development reading | stepping back from emotions | family | fiction reading | walk | thinking about Cleo | mindreading"
+    },
+    {
+        "full_date": "2019-09-05",
+        "date": "5 Sep",
+        "weekday": "Thursday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "family | good meal | netflix  | music | deep focus | work | getting shit done"
+    },
+    {
+        "full_date": "2019-09-05",
+        "date": "5 Sep",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | fiction reading | deep focus | work | getting shit done | planning tasks for the day"
+    },
+    {
+        "full_date": "2019-09-05",
+        "date": "5 Sep",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "motivated",
+        "activities": "stepping back from emotions | fiction reading | thinking about Cleo | dwelling on the past | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-04",
+        "date": "4 Sep",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | stepping back from emotions | family | deep talks | fiction reading | music | walk | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-04",
+        "date": "4 Sep",
+        "weekday": "Wednesday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "stepping back from emotions | music | deep focus | work | thesis | getting shit done"
+    },
+    {
+        "full_date": "2019-09-04",
+        "date": "4 Sep",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "normal",
+        "activities": "meditation | stepping back from emotions | netflix  | music | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo | overthinking | worrying about the future | victimizing myself | mindreading"
+    },
+    {
+        "full_date": "2019-09-04",
+        "date": "4 Sep",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | overthinking | dwelling on the past | victimizing myself | mindreading | fortunetelling | personalization"
+    },
+    {
+        "full_date": "2019-09-03",
+        "date": "3 Sep",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | stepping back from emotions | family | netflix  | fiction reading | thinking about Cleo | worrying about the future | dwelling on the past | mindreading | fortunetelling | emotional reasoning"
+    },
+    {
+        "full_date": "2019-09-03",
+        "date": "3 Sep",
+        "weekday": "Tuesday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "netflix  | fiction reading | music | deep focus | work"
+    },
+    {
+        "full_date": "2019-09-03",
+        "date": "3 Sep",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | netflix  | fiction reading | music | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-03",
+        "date": "3 Sep",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "normal",
+        "activities": "netflix  | fiction reading"
+    },
+    {
+        "full_date": "2019-09-02",
+        "date": "2 Sep",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "rad",
+        "activities": "journaling | self-development reading | stepping back from emotions | netflix  | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-02",
+        "date": "2 Sep",
+        "weekday": "Monday",
+        "time": "17.42",
+        "mood": "confident",
+        "activities": "stepping back from emotions | deep focus | work | getting shit done | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-02",
+        "date": "2 Sep",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | music | work | getting shit done | planning tasks for the day | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-09-02",
+        "date": "2 Sep",
+        "weekday": "Monday",
+        "time": "08.06",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | dwelling on the past | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-01",
+        "date": "1 Sep",
+        "weekday": "Sunday",
+        "time": "20.02",
+        "mood": "hopeful",
+        "activities": "meditation | journaling | self-development reading | stepping back from emotions | netflix  | fiction reading | music | thinking about Cleo | overthinking | dwelling on the past | mindreading | all-or-nothing thinking | mental filter | disqualifying the positive | magnification | labelling | personalization"
+    },
+    {
+        "full_date": "2019-09-01",
+        "date": "1 Sep",
+        "weekday": "Sunday",
+        "time": "15.38",
+        "mood": "emotional hijacking",
+        "activities": "netflix  | fiction reading | thinking about Cleo | dwelling on the past | victimizing myself | all-or-nothing thinking | magnification | emotional reasoning"
+    },
+    {
+        "full_date": "2019-09-01",
+        "date": "1 Sep",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "putting up a fight",
+        "activities": "meditation | stepping back from emotions | netflix  | fiction reading | music | walk | getting shit done | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | fortunetelling"
+    },
+    {
+        "full_date": "2019-09-01",
+        "date": "1 Sep",
+        "weekday": "Sunday",
+        "time": "08.00",
+        "mood": "emotionally tired",
+        "activities": "netflix  | thinking about Cleo | overthinking | worrying about the future | victimizing myself | mindreading | fortunetelling | magnification | emotional reasoning"
+    },
+    {
+        "full_date": "2019-08-31",
+        "date": "31 Aug",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "emotionally tired",
+        "activities": "meditation | journaling | self-development reading | dealing with feelings | stepping back from emotions | fiction reading | thinking about Cleo | overthinking | lots of social media | worrying about the future | obsessing | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | mental filter | magnification | emotional reasoning | personalization"
+    },
+    {
+        "full_date": "2019-08-31",
+        "date": "31 Aug",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "uneasy",
+        "activities": "dealing with feelings | stepping back from emotions | netflix  | fiction reading | music | thinking about Cleo | overthinking | worrying about the future | victimizing myself | mindreading | fortunetelling | overgeneralization | disqualifying the positive | personalization"
+    },
+    {
+        "full_date": "2019-08-31",
+        "date": "31 Aug",
+        "weekday": "Saturday",
+        "time": "12.27",
+        "mood": "confident",
+        "activities": "meditation | stepping back from emotions | music | walk | getting shit done | chores | planning tasks for the day | thinking about Cleo | dwelling on the past | mindreading | fortunetelling | disqualifying the positive | should statements"
+    },
+    {
+        "full_date": "2019-08-31",
+        "date": "31 Aug",
+        "weekday": "Saturday",
+        "time": "08.00",
+        "mood": "meh",
+        "activities": ""
+    },
+    {
+        "full_date": "2019-08-30",
+        "date": "30 Aug",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | stepping back from emotions | fiction reading | thinking about Cleo | fortunetelling | disqualifying the positive"
+    },
+    {
+        "full_date": "2019-08-30",
+        "date": "30 Aug",
+        "weekday": "Friday",
+        "time": "16.21",
+        "mood": "meh",
+        "activities": "music | deep focus | work | thinking about Cleo | overthinking | worrying about the future | obsessing | victimizing myself | mindreading | fortunetelling | all-or-nothing thinking | emotional reasoning | personalization"
+    },
+    {
+        "full_date": "2019-08-30",
+        "date": "30 Aug",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | netflix  | music | walk | deep focus | work | thinking about Cleo | victimizing myself | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-30",
+        "date": "30 Aug",
+        "weekday": "Friday",
+        "time": "08.18",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | worrying about the future | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-29",
+        "date": "29 Aug",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | stepping back from emotions | fiction reading | music | walk | thinking about Cleo | worrying about the future | victimizing myself | fortunetelling | emotional reasoning"
+    },
+    {
+        "full_date": "2019-08-29",
+        "date": "29 Aug",
+        "weekday": "Thursday",
+        "time": "16.36",
+        "mood": "meh",
+        "activities": "music | deep focus | work | thinking about Cleo | overthinking | victimizing myself | mindreading | fortunetelling | overgeneralization | magnification | emotional reasoning"
+    },
+    {
+        "full_date": "2019-08-29",
+        "date": "29 Aug",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "confident",
+        "activities": "meditation | stepping back from emotions | netflix  | music | deep focus | work | thinking about Cleo | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-29",
+        "date": "29 Aug",
+        "weekday": "Thursday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "meditation | netflix  | thinking about Cleo | fortunetelling | emotional reasoning"
+    },
+    {
+        "full_date": "2019-08-28",
+        "date": "28 Aug",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "drinking | netflix  | fiction reading"
+    },
+    {
+        "full_date": "2019-08-28",
+        "date": "28 Aug",
+        "weekday": "Wednesday",
+        "time": "20.01",
+        "mood": "motivated",
+        "activities": "journaling | self-development reading | stepping back from emotions | netflix  | fiction reading | music | thinking about Cleo | fortunetelling | all-or-nothing thinking | mental filter"
+    },
+    {
+        "full_date": "2019-08-28",
+        "date": "28 Aug",
+        "weekday": "Wednesday",
+        "time": "16.00",
+        "mood": "lonely",
+        "activities": "music | walk | deep focus | work | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-28",
+        "date": "28 Aug",
+        "weekday": "Wednesday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "meditation | stepping back from emotions | deep focus | work | thinking about Cleo | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-28",
+        "date": "28 Aug",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "confident",
+        "activities": "gym | stepping back from emotions | music | thinking about Cleo | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-27",
+        "date": "27 Aug",
+        "weekday": "Tuesday",
+        "time": "22.06",
+        "mood": "good",
+        "activities": "journaling | self-development reading | stepping back from emotions | netflix  | fiction reading"
+    },
+    {
+        "full_date": "2019-08-27",
+        "date": "27 Aug",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "hopeful",
+        "activities": "self-development reading | family | good meal | fiction reading | music | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-27",
+        "date": "27 Aug",
+        "weekday": "Tuesday",
+        "time": "16.00",
+        "mood": "meh",
+        "activities": "self-development reading | dealing with feelings | stepping back from emotions | fiction reading | work | thinking about Cleo | overthinking | lots of social media | worrying about the future | obsessing | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-27",
+        "date": "27 Aug",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | stepping back from emotions | music | work"
+    },
+    {
+        "full_date": "2019-08-27",
+        "date": "27 Aug",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "meh",
+        "activities": "netflix  | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-26",
+        "date": "26 Aug",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | journaling | self-development reading | stepping back from emotions | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-26",
+        "date": "26 Aug",
+        "weekday": "Monday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "stepping back from emotions | deep focus | work"
+    },
+    {
+        "full_date": "2019-08-26",
+        "date": "26 Aug",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "stepping back from emotions | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-26",
+        "date": "26 Aug",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "rad",
+        "activities": "gym"
+    },
+    {
+        "full_date": "2019-08-25",
+        "date": "25 Aug",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "self-development reading | stepping back from emotions | family | music | thinking about Cleo | victimizing myself | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-25",
+        "date": "25 Aug",
+        "weekday": "Sunday",
+        "time": "16.00",
+        "mood": "emotionally tired",
+        "activities": "family | drinking | good meal | walk | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-25",
+        "date": "25 Aug",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "family | walk | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-25",
+        "date": "25 Aug",
+        "weekday": "Sunday",
+        "time": "08.00",
+        "mood": "bad",
+        "activities": "meditation | thinking about Cleo | overthinking | lots of social media | dwelling on the past | victimizing myself | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-24",
+        "date": "24 Aug",
+        "weekday": "Saturday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "family | drinking"
+    },
+    {
+        "full_date": "2019-08-24",
+        "date": "24 Aug",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | stepping back from emotions | family | drinking"
+    },
+    {
+        "full_date": "2019-08-24",
+        "date": "24 Aug",
+        "weekday": "Saturday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "stepping back from emotions | family | hiking | thinking about Cleo | worrying about the future | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-24",
+        "date": "24 Aug",
+        "weekday": "Saturday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "stepping back from emotions | family | hiking | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-24",
+        "date": "24 Aug",
+        "weekday": "Saturday",
+        "time": "08.00",
+        "mood": "bad",
+        "activities": "meditation | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-23",
+        "date": "23 Aug",
+        "weekday": "Friday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "family | drinking"
+    },
+    {
+        "full_date": "2019-08-23",
+        "date": "23 Aug",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | stepping back from emotions | family | drinking | walk | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-23",
+        "date": "23 Aug",
+        "weekday": "Friday",
+        "time": "16.00",
+        "mood": "emotionally tired",
+        "activities": "self-development reading | dealing with feelings | music | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself | mindreading | fortunetelling"
+    },
+    {
+        "full_date": "2019-08-23",
+        "date": "23 Aug",
+        "weekday": "Friday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "meditation | self-development reading | dealing with feelings | thinking about Cleo | overthinking | dwelling on the past | victimizing myself"
+    },
+    {
+        "full_date": "2019-08-23",
+        "date": "23 Aug",
+        "weekday": "Friday",
+        "time": "08.00",
+        "mood": "meh",
+        "activities": "gym | dealing with feelings | music | thinking about Cleo | overthinking | dwelling on the past | victimizing myself"
+    },
+    {
+        "full_date": "2019-08-22",
+        "date": "22 Aug",
+        "weekday": "Thursday",
+        "time": "22.09",
+        "mood": "good",
+        "activities": "journaling | friends online | drinking | netflix "
+    },
+    {
+        "full_date": "2019-08-22",
+        "date": "22 Aug",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "self-development reading | netflix  | music | chores | thinking about Cleo | lots of social media"
+    },
+    {
+        "full_date": "2019-08-22",
+        "date": "22 Aug",
+        "weekday": "Thursday",
+        "time": "16.00",
+        "mood": "good",
+        "activities": "self-development reading | dealing with feelings | work"
+    },
+    {
+        "full_date": "2019-08-22",
+        "date": "22 Aug",
+        "weekday": "Thursday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "meditation | dealing with feelings | work | thinking about Cleo | overthinking | dwelling on the past | obsessing | victimizing myself"
+    },
+    {
+        "full_date": "2019-08-22",
+        "date": "22 Aug",
+        "weekday": "Thursday",
+        "time": "08.01",
+        "mood": "good",
+        "activities": "netflix  | music | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-21",
+        "date": "21 Aug",
+        "weekday": "Wednesday",
+        "time": "22.30",
+        "mood": "good",
+        "activities": "netflix  | fiction reading"
+    },
+    {
+        "full_date": "2019-08-21",
+        "date": "21 Aug",
+        "weekday": "Wednesday",
+        "time": "20.18",
+        "mood": "good",
+        "activities": "meditation | journaling | self-development reading | netflix  | music | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-21",
+        "date": "21 Aug",
+        "weekday": "Wednesday",
+        "time": "16.00",
+        "mood": "meh",
+        "activities": "dealing with feelings | music | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-21",
+        "date": "21 Aug",
+        "weekday": "Wednesday",
+        "time": "14.15",
+        "mood": "awful",
+        "activities": "work | thinking about Cleo | overthinking | worrying about the future | dwelling on the past | victimizing myself"
+    },
+    {
+        "full_date": "2019-08-21",
+        "date": "21 Aug",
+        "weekday": "Wednesday",
+        "time": "12.37",
+        "mood": "bad",
+        "activities": "work | chores | thinking about Cleo | overthinking | lots of social media | dwelling on the past | obsessing"
+    },
+    {
+        "full_date": "2019-08-21",
+        "date": "21 Aug",
+        "weekday": "Wednesday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "gym | music | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-20",
+        "date": "20 Aug",
+        "weekday": "Tuesday",
+        "time": "22.31",
+        "mood": "good",
+        "activities": "drinking | netflix "
+    },
+    {
+        "full_date": "2019-08-20",
+        "date": "20 Aug",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | journaling | self-development reading | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-20",
+        "date": "20 Aug",
+        "weekday": "Tuesday",
+        "time": "16.00",
+        "mood": "meh",
+        "activities": "friends online | work | thinking about Cleo | overthinking | worrying about the future | victimizing myself"
+    },
+    {
+        "full_date": "2019-08-20",
+        "date": "20 Aug",
+        "weekday": "Tuesday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "friends online | music | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-20",
+        "date": "20 Aug",
+        "weekday": "Tuesday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "netflix  | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-19",
+        "date": "19 Aug",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | fiction reading"
+    },
+    {
+        "full_date": "2019-08-19",
+        "date": "19 Aug",
+        "weekday": "Monday",
+        "time": "16.00",
+        "mood": "meh",
+        "activities": "self-development reading | friends online | work | thinking about Cleo | dwelling on the past"
+    },
+    {
+        "full_date": "2019-08-19",
+        "date": "19 Aug",
+        "weekday": "Monday",
+        "time": "12.00",
+        "mood": "meh",
+        "activities": "meditation | friends online | work | thinking about Cleo | overthinking | lots of social media | obsessing"
+    },
+    {
+        "full_date": "2019-08-19",
+        "date": "19 Aug",
+        "weekday": "Monday",
+        "time": "08.00",
+        "mood": "meh",
+        "activities": "gym | thinking about Cleo | overthinking"
+    },
+    {
+        "full_date": "2019-08-18",
+        "date": "18 Aug",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "journaling | self-development reading | friends online | fiction reading"
+    },
+    {
+        "full_date": "2019-08-18",
+        "date": "18 Aug",
+        "weekday": "Sunday",
+        "time": "16.00",
+        "mood": "meh",
+        "activities": "self-development reading | friends live | thesis | thinking about Cleo | overthinking | lots of social media | dwelling on the past | obsessing"
+    },
+    {
+        "full_date": "2019-08-18",
+        "date": "18 Aug",
+        "weekday": "Sunday",
+        "time": "12.00",
+        "mood": "good",
+        "activities": "meditation | self-development reading | fiction reading | thesis | chores"
+    },
+    {
+        "full_date": "2019-08-18",
+        "date": "18 Aug",
+        "weekday": "Sunday",
+        "time": "09.26",
+        "mood": "bad",
+        "activities": "thinking about Cleo | overthinking"
+    },
+    {
+        "full_date": "2019-08-18",
+        "date": "18 Aug",
+        "weekday": "Sunday",
+        "time": "08.00",
+        "mood": "good",
+        "activities": "netflix "
+    },
+    {
+        "full_date": "2019-08-17",
+        "date": "17 Aug",
+        "weekday": "Saturday",
+        "time": "18.54",
+        "mood": "awful",
+        "activities": "meditation | journaling | gym | netflix  | fiction reading | thinking about Cleo | overthinking | lots of social media"
+    },
+    {
+        "full_date": "2019-08-16",
+        "date": "16 Aug",
+        "weekday": "Friday",
+        "time": "20.00",
+        "mood": "meh",
+        "activities": "meditation | journaling | gym | family | fiction reading | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-15",
+        "date": "15 Aug",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "friends live | drinking | netflix  | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-14",
+        "date": "14 Aug",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "friends live | drinking | deep talks | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-13",
+        "date": "13 Aug",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "meh",
+        "activities": "meditation | journaling | fiction reading | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-12",
+        "date": "12 Aug",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "bad",
+        "activities": "meditation | journaling | gym | fiction reading | work | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-11",
+        "date": "11 Aug",
+        "weekday": "Sunday",
+        "time": "20.00",
+        "mood": "meh",
+        "activities": "meditation | journaling | family | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-10",
+        "date": "10 Aug",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "bad",
+        "activities": "meditation | journaling | gym | family | fiction reading | thinking about Cleo"
+    },
+    {
+        "full_date": "2019-08-09",
+        "date": "9 Aug",
+        "weekday": "Friday",
+        "time": "09.02",
+        "mood": "meh",
+        "activities": "meditation | journaling | family | drinking | netflix  | fiction reading | work"
+    },
+    {
+        "full_date": "2019-08-08",
+        "date": "8 Aug",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | journaling | family | deep talks | fiction reading | work"
+    },
+    {
+        "full_date": "2019-08-07",
+        "date": "7 Aug",
+        "weekday": "Wednesday",
+        "time": "20.00",
+        "mood": "awful",
+        "activities": "work"
+    },
+    {
+        "full_date": "2019-08-06",
+        "date": "6 Aug",
+        "weekday": "Tuesday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "meditation | gym | family | drinking | work"
+    },
+    {
+        "full_date": "2019-08-05",
+        "date": "5 Aug",
+        "weekday": "Monday",
+        "time": "20.00",
+        "mood": "awful",
+        "activities": "work"
+    },
+    {
+        "full_date": "2019-08-03",
+        "date": "3 Aug",
+        "weekday": "Saturday",
+        "time": "20.00",
+        "mood": "rad",
+        "activities": "drinking | good meal | deep talks"
+    },
+    {
+        "full_date": "2019-08-02",
+        "date": "2 Aug",
+        "weekday": "Friday",
+        "time": "11.57",
+        "mood": "rad",
+        "activities": "meditation | journaling | friends live | drinking | good meal | work"
+    },
+    {
+        "full_date": "2019-08-01",
+        "date": "1 Aug",
+        "weekday": "Thursday",
+        "time": "20.00",
+        "mood": "good",
+        "activities": "family | friends live | fiction reading | work"
+    },
+    {
+        "full_date": "2019-08-01",
+        "date": "1 Aug",
+        "weekday": "Thursday",
+        "time": "12.14",
+        "mood": "meh",
+        "activities": "family | work"
+    }
+]

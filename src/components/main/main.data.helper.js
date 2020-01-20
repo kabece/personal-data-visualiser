@@ -1,7 +1,8 @@
 import moment from 'moment'
-import {TimeRange, TimeSeries, TimeRangeEvent} from 'pondjs'
+import {TimeRange, TimeSeries, TimeRangeEvent, TimeEvent} from 'pondjs'
 
 import sleepData from '../../data/sleepData.json'
+import moodData from '../../data/moodData.json'
 
 const timeFormat = 'YYYY-MM-DD HH:mm:ss'
 
@@ -22,9 +23,15 @@ const prepareSleepData = data =>
     activity: Number(element['Activity (steps)'])
   }))
 
+const prepareMoodData = data =>
+  data.reverse().map(element => ({
+    ...element,
+    activities: element.activities.split('|').map(value => value.trim())
+  }))
+
 const convertTimeInBedToTimeSeries = data => {
   const name = 'Time in Bed'
-  const events = prepareSleepData(data).map(element => new TimeRangeEvent(
+  const events = data.map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
     {
       value: prepareTimeInBed(element.timeInBed)
@@ -36,7 +43,7 @@ const convertTimeInBedToTimeSeries = data => {
 
 const convertStepCountToTimeSeries = data => {
   const name = 'Step Count'
-  const events = prepareSleepData(data).map(element => new TimeRangeEvent(
+  const events = data.map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
     {
       value: element.activity
@@ -48,7 +55,7 @@ const convertStepCountToTimeSeries = data => {
 
 const convertSleepQualityToTimeSeries = data => {
   const name = 'Sleep Quality (%)'
-  const events = prepareSleepData(data).map(element => new TimeRangeEvent(
+  const events = data.map(element => new TimeRangeEvent(
     createTimeRange(element.start, element.end),
     {
       value: prepareSleepQuality(element.sleepQuality)
@@ -58,11 +65,26 @@ const convertSleepQualityToTimeSeries = data => {
   return new TimeSeries({name, events})
 }
 
+const convertMoodDataToTimeSeries = data => {
+  const name = 'Mood Data'
+  const events = data.map(element => new TimeEvent(
+    moment(`${element.full_date} ${element.time.replace('.', ':')}`, timeFormat),
+    {
+      ...element
+    }
+  ))
+
+  return new TimeSeries({name, events})
+}
+
 const prepareData = () => {
-  const timeInBedTimeSeries = convertTimeInBedToTimeSeries(sleepData)
-  const stepCountTimeSeries = convertStepCountToTimeSeries(sleepData)
-  const sleepQualityTimeSeries = convertSleepQualityToTimeSeries(sleepData)
-  return [timeInBedTimeSeries, stepCountTimeSeries, sleepQualityTimeSeries]
+  const preparedSleepData = prepareSleepData(sleepData)
+  const preparedMoodData = prepareMoodData(moodData)
+  const timeInBedTimeSeries = convertTimeInBedToTimeSeries(preparedSleepData)
+  const stepCountTimeSeries = convertStepCountToTimeSeries(preparedSleepData)
+  const sleepQualityTimeSeries = convertSleepQualityToTimeSeries(preparedSleepData)
+  const moodDataTimeSeries = convertMoodDataToTimeSeries(preparedMoodData)
+  return [timeInBedTimeSeries, stepCountTimeSeries, sleepQualityTimeSeries, moodDataTimeSeries]
 }
 
 // eslint-disable-next-line import/prefer-default-export
