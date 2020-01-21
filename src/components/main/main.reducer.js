@@ -27,6 +27,16 @@ const initialState = {
       displayName: 'Sleep Quality (%)',
       value: 'Sleep Quality (%)',
       dataType: dataTypes.numerical
+    },
+    {
+      displayName: 'Mood',
+      value: 'Mood',
+      dataType: dataTypes.numerical
+    },
+    {
+      displayName: 'Mood (Aggregated)',
+      value: 'Mood (Aggregated)',
+      dataType: dataTypes.numerical
     }
   ],
   chartTypeOptions: [

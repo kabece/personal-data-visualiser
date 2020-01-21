@@ -1,7 +1,8 @@
 import {shape, string, arrayOf, oneOf, object} from 'prop-types'
 
 const dataTypes = {
-  numerical: 'NUMERICAL'
+  numerical: 'NUMERICAL',
+  categorical: 'CATEGORICAL'
 }
 
 const chartTypes = {
