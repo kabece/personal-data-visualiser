@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import ChartContainer from '../../statelessComponents/chartContainer/chartContainer.presenter'
 import selector from './main.selector'
 import {prepareData} from './main.data.helper'
-import {setTimeRange, setDataSource, setChartType, loadData, setTimeRangeSource} from './main.actionCreators'
+import {setTimeRange, setDataSource, setChartType, loadData, setTimeRangeSource, showBaselines} from './main.actionCreators'
 import {optionsShape, chartShape} from '../../index.shapes'
 
 const Main = ({
@@ -17,6 +17,7 @@ const Main = ({
   onDataSourceSelect,
   onChartTypeSelect,
   onTimeRangeSourceSelect,
+  onShowBaselines,
   onLoadData
 }) => {
   useEffect(() => {
@@ -49,6 +50,7 @@ const Main = ({
             })
           }
           onSetTimeRange={({newTimeRange}) => onSetTimeRange({chartId: key, newTimeRange})}
+          onShowBaselines={() => onShowBaselines({chartId: key})}
         />
       ))}
     </div>
@@ -64,6 +66,7 @@ Main.propTypes = {
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
   onTimeRangeSourceSelect: func.isRequired,
+  onShowBaselines: func.isRequired,
   onLoadData: func.isRequired
 }
 
@@ -72,6 +75,7 @@ const mapDispatchToProps = dispatch => ({
   onDataSourceSelect: ({dataSourceOption, chartId}) => dispatch(setDataSource({dataSourceOption, chartId})),
   onChartTypeSelect: ({chartTypeOption, chartId}) => dispatch(setChartType({chartTypeOption, chartId})),
   onTimeRangeSourceSelect: ({timeRangeSourceOption, chartId}) => dispatch(setTimeRangeSource({timeRangeSourceOption, chartId})),
+  onShowBaselines: ({chartId}) => dispatch(showBaselines({chartId})),
   onLoadData: ({data}) => dispatch(loadData({data}))
 })
 

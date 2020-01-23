@@ -1,20 +1,33 @@
 import React from 'react'
-import {object, string, func} from 'prop-types'
+import {object, string, func, bool} from 'prop-types'
 import {
   Charts,
   ChartContainer,
   ChartRow,
   YAxis,
   LineChart,
+  Baseline,
   styler
 } from 'react-timeseries-charts'
 
 import {timeRangeShape} from '../../index.shapes'
 
+const baselineStyleLite = {
+  line: {
+    stroke: 'steelblue',
+    strokeWidth: 1,
+    opacity: 0.5
+  },
+  label: {
+    fill: 'steelblue'
+  }
+}
+
 const LineChartWrapper = ({
   dataSeries,
   timeRange,
   chartTitle,
+  areBaselinesVisible,
   onSetTimeRange
 }) => (
   <ChartContainer
@@ -52,8 +65,9 @@ const LineChartWrapper = ({
           series={dataSeries}
           columns={['value']}
           style={styler}
-          interpolation='curveBasis'
+          interpolation='curveLinear'
         />
+        {['min', 'max', 'avg'].map(element => <Baseline axis='value' style={baselineStyleLite} value={dataSeries[element]('value')} label={element[0].toUpperCase() + element.slice(1)} position='right' visible={areBaselinesVisible} />)}
       </Charts>
       <YAxis
         id='value'
@@ -71,6 +85,7 @@ LineChartWrapper.propTypes = {
   dataSeries: object.isRequired, // FIXME:
   timeRange: timeRangeShape.isRequired,
   chartTitle: string.isRequired,
+  areBaselinesVisible: bool.isRequired,
   onSetTimeRange: func.isRequired
 }
 

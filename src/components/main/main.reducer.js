@@ -6,10 +6,18 @@ import {dataTypes, chartTypes} from '../../index.shapes'
 const initialState = {
   primaryTimeRange: null,
   charts: {
-    1: {},
-    2: {},
-    3: {},
-    4: {}
+    1: {
+      areBaselinesVisible: false
+    },
+    2: {
+      areBaselinesVisible: false
+    },
+    3: {
+      areBaselinesVisible: false
+    },
+    4: {
+      areBaselinesVisible: false
+    }
   },
   data: [],
   dataSourceOptions: [
@@ -119,6 +127,18 @@ const mainReducer = createReducer({
             .map(key => previousCharts[key])
             .find(element => element.title === timeRangeSourceOption.displayName)
             .timeRange
+        }
+      }
+    }),
+    [actions.SHOW_BASELINES]: ({
+      action: {chartId},
+      state: {charts: previousCharts}
+    }) => ({
+      charts: {
+        ...previousCharts,
+        [chartId]: {
+          ...previousCharts[chartId],
+          areBaselinesVisible: !previousCharts[chartId].areBaselinesVisible
         }
       }
     })

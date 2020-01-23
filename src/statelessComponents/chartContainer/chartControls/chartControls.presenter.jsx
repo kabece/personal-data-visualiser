@@ -1,16 +1,19 @@
 import React from 'react'
-import {func} from 'prop-types'
+import {func, bool} from 'prop-types'
 
 import Select from '../../select/select.presenter'
+import CheckBox from '../../checkBox/checkBox.presenter'
 import {optionsShape} from '../../../index.shapes'
 
 const ChartControls = ({
   dataSourceOptions,
   chartTypeOptions,
   timeRangeSourceOptions,
+  areBaselinesVisible,
   onDataSourceSelect,
   onChartTypeSelect,
-  onTimeRangeSourceSelect
+  onTimeRangeSourceSelect,
+  onShowBaselines
 }) => (
   <div className='chartControls'>
     <Select
@@ -28,6 +31,11 @@ const ChartControls = ({
       label='Time Range: '
       onChange={onTimeRangeSourceSelect}
     />
+    <CheckBox
+      label='Show baselines:'
+      isChecked={areBaselinesVisible}
+      onChange={onShowBaselines}
+    />
   </div>
 )
 
@@ -35,9 +43,11 @@ ChartControls.propTypes = {
   dataSourceOptions: optionsShape.isRequired,
   chartTypeOptions: optionsShape.isRequired,
   timeRangeSourceOptions: optionsShape.isRequired,
+  areBaselinesVisible: bool.isRequired,
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
-  onTimeRangeSourceSelect: func.isRequired
+  onTimeRangeSourceSelect: func.isRequired,
+  onShowBaselines: func.isRequired
 }
 
 export default ChartControls

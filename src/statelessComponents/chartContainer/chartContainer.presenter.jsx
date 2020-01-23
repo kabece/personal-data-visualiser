@@ -13,6 +13,7 @@ const ChartContainer = ({
   onDataSourceSelect,
   onChartTypeSelect,
   onTimeRangeSourceSelect,
+  onShowBaselines,
   onSetTimeRange
 }) => (
   <div className='chartContainer'>
@@ -20,8 +21,10 @@ const ChartContainer = ({
       dataSourceOptions={dataSourceOptions}
       chartTypeOptions={chartTypeOptions}
       timeRangeSourceOptions={timeRangeSourceOptions}
+      areBaselinesVisible={chart.areBaselinesVisible}
       onDataSourceSelect={onDataSourceSelect}
       onChartTypeSelect={onChartTypeSelect}
+      onShowBaselines={onShowBaselines}
       onTimeRangeSourceSelect={onTimeRangeSourceSelect}
     />
     <ChartTypeSwitcher
@@ -39,6 +42,7 @@ ChartContainer.propTypes = {
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
   onTimeRangeSourceSelect: func.isRequired,
+  onShowBaselines: func.isRequired,
   onSetTimeRange: func.isRequired
 }
 

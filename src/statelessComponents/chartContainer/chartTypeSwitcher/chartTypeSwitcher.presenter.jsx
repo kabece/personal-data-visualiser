@@ -22,6 +22,7 @@ const ChartTypeSwitcher = ({
             timeRange={chart.timeRange}
             onSetTimeRange={onSetTimeRange}
             key={chart.id}
+            areBaselinesVisible={chart.areBaselinesVisible}
           />
         </div>
       )
@@ -35,6 +36,7 @@ const ChartTypeSwitcher = ({
             timeRange={chart.timeRange}
             onSetTimeRange={onSetTimeRange}
             key={chart.id}
+            areBaselinesVisible={chart.areBaselinesVisible}
           />
         </div>
       )

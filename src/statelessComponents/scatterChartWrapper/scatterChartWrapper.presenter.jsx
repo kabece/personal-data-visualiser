@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
-import {object, string, func} from 'prop-types'
+import {object, string, func, bool} from 'prop-types'
 import {
   Charts,
   ChartContainer,
   ChartRow,
   YAxis,
-  ScatterChart
+  ScatterChart,
+  Baseline
 } from 'react-timeseries-charts'
 
 import {timeRangeShape} from '../../index.shapes'
@@ -14,6 +15,7 @@ const ScatterChartWrapper = ({
   dataSeries,
   timeRange,
   chartTitle,
+  areBaselinesVisible,
   onSetTimeRange
 }) => {
   const [highlightedElement, setHighlightedElement] = useState(null)
@@ -30,6 +32,17 @@ const ScatterChartWrapper = ({
     },
     box: {
       fill: 'black'
+    }
+  }
+
+  const baselineStyleLite = {
+    line: {
+      stroke: 'steelblue',
+      strokeWidth: 1,
+      opacity: 0.5
+    },
+    label: {
+      fill: 'steelblue'
     }
   }
 
@@ -80,6 +93,7 @@ const ScatterChartWrapper = ({
             infoStyle={trackerStyle}
             onMouseNear={newHighlightedElement => setHighlightedElement(newHighlightedElement)}
           />
+          {['min', 'max', 'avg'].map(element => <Baseline axis='value' style={baselineStyleLite} value={dataSeries[element]('value')} label={element[0].toUpperCase() + element.slice(1)} position='right' visible={areBaselinesVisible} />)}
         </Charts>
         <YAxis
           id='value'
@@ -98,6 +112,7 @@ ScatterChartWrapper.propTypes = {
   dataSeries: object.isRequired, // FIXME:
   timeRange: timeRangeShape.isRequired,
   chartTitle: string.isRequired,
+  areBaselinesVisible: bool.isRequired,
   onSetTimeRange: func.isRequired
 }
 

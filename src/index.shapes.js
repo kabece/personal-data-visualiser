@@ -1,4 +1,4 @@
-import {shape, string, arrayOf, oneOf, object} from 'prop-types'
+import {shape, string, arrayOf, oneOf, object, bool} from 'prop-types'
 
 const dataTypes = {
   numerical: 'NUMERICAL',
@@ -23,6 +23,7 @@ const timeRangeShape = shape({
 
 const chartShape = shape({
   title: string,
+  areBaselinesVisible: bool.isRequired,
   dataType: oneOf([dataTypes.numerical]),
   chartType: oneOf([chartTypes.lineChart, chartTypes.scatterChart]),
   timeRange: timeRangeShape,

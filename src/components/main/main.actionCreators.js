@@ -24,6 +24,11 @@ export const setTimeRangeSource = ({timeRangeSourceOption, chartId}) => ({
   chartId
 })
 
+export const showBaselines = ({chartId}) => ({
+  type: actions.SHOW_BASELINES,
+  chartId
+})
+
 export const loadData = ({data}) => ({
   type: actions.LOAD_DATA,
   data
