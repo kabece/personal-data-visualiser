@@ -1,0 +1,10 @@
+.aggregateContainer {
+  width: $aggregateContainerWidth;
+  height: $aggregateContainerHeight;
+  font-weight: 200;
+  box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.45);
+  border-radius: 8px;
+  margin: auto;
+}
+
+@import './aggregatePlaceholder/aggregatePlaceholder.styles.scss'

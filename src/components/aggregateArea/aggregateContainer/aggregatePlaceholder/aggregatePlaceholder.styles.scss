@@ -1,0 +1,11 @@
+.aggregatePlaceholder {
+  height: 100%;
+  background-color: $chartBackgroundColor;
+  border-radius: 8px;
+  margin: auto;
+  color: $chartFontColor;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

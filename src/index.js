@@ -4,6 +4,7 @@ import {render} from 'react-dom'
 import {createStore, compose} from 'redux'
 import {Provider} from 'react-redux'
 import Main from './components/main/main.container'
+import AggregateArea from './components/aggregateArea/aggregateArea.container'
 import rootReducer from './index.reducer'
 import './index.scss'
 
@@ -18,6 +19,7 @@ render(
   <Provider store={store}>
     <div className='header'>Personal Data Visualizer</div>
     <Main />
+    <AggregateArea />
   </Provider>,
   document.getElementById('root')
 )

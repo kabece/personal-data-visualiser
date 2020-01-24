@@ -3,6 +3,15 @@ $chartFontColor: rgb(192, 192, 192);
 $mainBackgroundColor: rgba(192, 192, 192, 0.25);
 $secondaryColor: #EF8354;
 
+// Dimensions
+$chartContainerWidth: 502px;
+$chartWidth: 502px;
+$chartHeight: 270px;
+$chartControlsHeight: 50px;
+
+$aggregateContainerWidth: 1050px;
+$aggregateContainerHeight: 270px;
+
 body {
   margin: 0;
   background-color: $mainBackgroundColor;
@@ -27,6 +36,7 @@ code {
 }
 
 @import './components/main/main.styles.scss';
+@import './components//aggregateArea/aggregateArea.styles.scss';
 @import './statelessComponents/chartContainer/chartContainer.styles.scss';
 @import './statelessComponents/select/select.styles.scss';
 @import './statelessComponents/checkBox/checkBox.styles.scss';
