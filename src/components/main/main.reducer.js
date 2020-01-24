@@ -57,6 +57,11 @@ const initialState = {
       displayName: 'Scatter Chart',
       value: chartTypes.scatterChart,
       dataType: dataTypes.numerical
+    },
+    {
+      displayName: 'Combined Chart',
+      value: chartTypes.combinedChart,
+      dataType: dataTypes.numerical
     }
   ]
 }

@@ -4,14 +4,13 @@ import {func} from 'prop-types'
 import ChartPlaceholder from '../chartPlaceholder/chartPlaceholder.presenter'
 import LineChartWrapper from '../../lineChartWrapper/lineChartWrapper.presenter'
 import ScatterChartWrapper from '../../scatterChartWrapper/scatterChartWrapper.presenter'
+import CombinedChartWrapper from '../../combinedChartWrapper/combinedChartWrapper'
 import {chartTypes, chartShape} from '../../../index.shapes'
 
 const ChartTypeSwitcher = ({
   chart,
   onSetTimeRange
 }) => {
-  // FIXME:
-  // eslint-disable-next-line
   switch (chart.chartType) {
     case chartTypes.lineChart:
       return (
@@ -40,6 +39,21 @@ const ChartTypeSwitcher = ({
           />
         </div>
       )
+
+    case chartTypes.combinedChart:
+      return (
+        <div className='chartWrapper'>
+          <CombinedChartWrapper
+            dataSeries={chart.dataSeries}
+            chartTitle={chart.title}
+            timeRange={chart.timeRange}
+            onSetTimeRange={onSetTimeRange}
+            key={chart.id}
+            areBaselinesVisible={chart.areBaselinesVisible}
+          />
+        </div>
+      )
+
     default:
       return (
         <ChartPlaceholder />

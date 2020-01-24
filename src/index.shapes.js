@@ -7,7 +7,8 @@ const dataTypes = {
 
 const chartTypes = {
   lineChart: 'LINE_CHART',
-  scatterChart: 'SCATTER_CHART'
+  scatterChart: 'SCATTER_CHART',
+  combinedChart: 'COMBINED_CHART'
 }
 
 const optionsShape = arrayOf(shape({
@@ -25,7 +26,7 @@ const chartShape = shape({
   title: string,
   areBaselinesVisible: bool.isRequired,
   dataType: oneOf([dataTypes.numerical]),
-  chartType: oneOf([chartTypes.lineChart, chartTypes.scatterChart]),
+  chartType: oneOf([chartTypes.lineChart, chartTypes.scatterChart, chartTypes.combinedChart]),
   timeRange: timeRangeShape,
   dataSeries: object // TODO: proptypes
 })
