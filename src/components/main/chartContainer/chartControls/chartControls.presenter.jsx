@@ -1,9 +1,9 @@
 import React from 'react'
 import {func, bool} from 'prop-types'
 
-import Select from '../../select/select.presenter'
-import CheckBox from '../../checkBox/checkBox.presenter'
-import {optionsShape} from '../../../index.shapes'
+import Select from '../../../../statelessComponents/select/select.presenter'
+import CheckBox from '../../../../statelessComponents/checkBox/checkBox.presenter'
+import {optionsShape} from '../../../../index.shapes'
 
 const ChartControls = ({
   dataSourceOptions,

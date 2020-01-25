@@ -2,10 +2,10 @@ import React from 'react'
 import {func} from 'prop-types'
 
 import ChartPlaceholder from '../chartPlaceholder/chartPlaceholder.presenter'
-import LineChartWrapper from '../../lineChartWrapper/lineChartWrapper.presenter'
-import ScatterChartWrapper from '../../scatterChartWrapper/scatterChartWrapper.presenter'
-import CombinedChartWrapper from '../../combinedChartWrapper/combinedChartWrapper'
-import {chartTypes, chartShape} from '../../../index.shapes'
+import LineChartWrapper from '../../../../statelessComponents/lineChartWrapper/lineChartWrapper.presenter'
+import ScatterChartWrapper from '../../../../statelessComponents/scatterChartWrapper/scatterChartWrapper.presenter'
+import CombinedChartWrapper from '../../../../statelessComponents/combinedChartWrapper/combinedChartWrapper'
+import {chartTypes, chartShape} from '../../../../index.shapes'
 
 const ChartTypeSwitcher = ({
   chart,

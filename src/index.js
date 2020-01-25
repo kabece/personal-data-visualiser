@@ -5,7 +5,7 @@ import {createStore, compose} from 'redux'
 import {Provider} from 'react-redux'
 import Main from './components/main/main.container'
 import AggregateArea from './components/aggregateArea/aggregateArea.container'
-import rootReducer from './index.reducer'
+import rootReducer from './reducer'
 import './index.scss'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose // eslint-disable-line no-underscore-dangle

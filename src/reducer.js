@@ -1,7 +1,7 @@
 import createReducer from '@agillic/create-reducer'
 
-import * as actions from './main.actions'
-import {dataTypes, chartTypes} from '../../index.shapes'
+import * as actions from './actions'
+import {dataTypes, chartTypes} from './index.shapes'
 
 const initialState = {
   primaryTimeRange: null,
@@ -66,7 +66,7 @@ const initialState = {
   ]
 }
 
-const mainReducer = createReducer({
+const rootReducer = createReducer({
   initialState,
   actions: {
     [actions.LOAD_DATA]: ({action: {data}}) => ({data}),
@@ -153,4 +153,4 @@ const mainReducer = createReducer({
   }
 })
 
-export default mainReducer
+export default rootReducer

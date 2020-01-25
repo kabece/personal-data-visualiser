@@ -1,6 +1,6 @@
 import {createSelector} from 'reselect'
 
-const mainSelector = ({main}) => main
+const mainSelector = state => state
 
 export default createSelector(
   mainSelector,

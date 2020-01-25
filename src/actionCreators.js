@@ -1,4 +1,4 @@
-import * as actions from './main.actions'
+import * as actions from './actions'
 
 export const setTimeRange = ({newTimeRange, chartId}) => ({
   type: actions.SET_TIME_RANGE,

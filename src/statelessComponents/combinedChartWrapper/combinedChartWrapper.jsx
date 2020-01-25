@@ -101,7 +101,17 @@ const CombinedChartWrapper = ({
             columns={['value']}
             interpolation='curveLinear'
           />
-          {['min', 'max', 'avg'].map(element => <Baseline axis='value' style={baselineStyleLite} value={dataSeries[element]('value')} label={element[0].toUpperCase() + element.slice(1)} position='right' visible={areBaselinesVisible} />)}
+          {['min', 'max', 'avg'].map(element => (
+            <Baseline
+              axis='value'
+              style={baselineStyleLite}
+              value={dataSeries[element]('value')}
+              label={element[0].toUpperCase() + element.slice(1)}
+              position='right'
+              visible={areBaselinesVisible}
+              key={element}
+            />
+          ))}
         </Charts>
         <YAxis
           id='value'

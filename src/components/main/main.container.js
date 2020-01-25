@@ -2,10 +2,10 @@ import React, {useEffect} from 'react'
 import {func, objectOf} from 'prop-types'
 import {connect} from 'react-redux'
 
-import ChartContainer from '../../statelessComponents/chartContainer/chartContainer.presenter'
-import selector from './main.selector'
+import ChartContainer from './chartContainer/chartContainer.presenter'
+import selector from '../../selector'
 import {prepareData} from './main.data.helper'
-import {setTimeRange, setDataSource, setChartType, loadData, setTimeRangeSource, showBaselines} from './main.actionCreators'
+import {setTimeRange, setDataSource, setChartType, loadData, setTimeRangeSource, showBaselines} from '../../actionCreators'
 import {optionsShape, chartShape} from '../../index.shapes'
 
 const Main = ({
