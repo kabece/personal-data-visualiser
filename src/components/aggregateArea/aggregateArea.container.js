@@ -1,11 +1,26 @@
 import React from 'react'
+import {objectOf} from 'prop-types'
+import {connect} from 'react-redux'
 
-import AggregateContainer from './aggregateContainer/aggregateContainer.presenter'
+import AggregateChart from './aggregateChart/aggregateChart.presenter'
+import AggregatePlaceholder from './aggregatePlaceholder/aggregatePlaceholder.presenter'
+import selector from '../../selector'
+import {chartShape} from '../../index.shapes'
 
-const AggregateArea = () => (
-  <div className='aggregateArea'>
-    <AggregateContainer />
-  </div>
-)
+const AggregateArea = ({
+  charts
+}) => {
+  const aggregateChart = Object.keys(charts).filter(key => charts[key].title === 'Mood').map(key => charts[key])[0]
 
-export default AggregateArea
+  return (
+    <div className='aggregateArea'>
+      {aggregateChart ? <AggregateChart chart={aggregateChart} /> : <AggregatePlaceholder />}
+    </div>
+  )
+}
+
+AggregateArea.propTypes = {
+  charts: objectOf(chartShape).isRequired
+}
+
+export default connect(selector)(AggregateArea)
