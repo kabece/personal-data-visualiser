@@ -15,25 +15,48 @@ const createTimeRange = (beginTime, endTime) => new TimeRange(
 const prepareTimeInBed = timeInBed => Number(timeInBed.split(':')[0]) + Number(timeInBed.split(':')[1]) / 60
 const prepareSleepQuality = sleepQuality => Number(sleepQuality.slice(0, -1))
 
+// more generic mood ratings
+// const moodMappings = {
+//   rad: 5,
+//   excited: 5,
+//   good: 4,
+//   hopeful: 4,
+//   confident: 4,
+//   motivated: 4,
+//   calm: 4,
+//   meh: 3,
+//   normal: 3,
+//   uneasy: 3,
+//   'putting up a fight': 3,
+//   tired: 3,
+//   confused: 3,
+//   bad: 2,
+//   'emotionally tired': 2,
+//   lonely: 2,
+//   demotivated: 2,
+//   awful: 1,
+//   'emotional hijacking': 1
+// }
+
 const moodMappings = {
-  rad: 5,
-  excited: 5,
-  good: 4,
-  hopeful: 4,
-  confident: 4,
-  motivated: 4,
-  calm: 4,
-  meh: 3,
-  normal: 3,
-  uneasy: 3,
-  'putting up a fight': 3,
-  tired: 3,
-  confused: 3,
-  bad: 2,
-  'emotionally tired': 2,
-  lonely: 2,
-  demotivated: 2,
-  awful: 1,
+  rad: 19,
+  excited: 18,
+  good: 17,
+  hopeful: 16,
+  confident: 15,
+  motivated: 14,
+  calm: 13,
+  meh: 12,
+  normal: 11,
+  uneasy: 10,
+  'putting up a fight': 9,
+  tired: 8,
+  confused: 7,
+  bad: 6,
+  'emotionally tired': 5,
+  lonely: 4,
+  demotivated: 3,
+  awful: 2,
   'emotional hijacking': 1
 }
 
@@ -59,6 +82,14 @@ const aggregateMoodData = data =>
       full_date: element[0].full_date,
       value: element.map(_ => _.value).reduce((left, right) => left + right, 0) / element.length
     }))
+
+// Below computes the average mood as the value
+// const aggregateMoodData = data =>
+//   Object.values(groupBy(data, 'full_date'))
+//     .map(element => ({
+//       full_date: element[0].full_date,
+//       value: element.map(_ => _.value).reduce((left, right) => left + right, 0) / element.length
+//     }))
 
 const convertTimeInBedToTimeSeries = data => {
   const name = 'Time in Bed'

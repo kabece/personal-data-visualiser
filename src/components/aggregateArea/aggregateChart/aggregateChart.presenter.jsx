@@ -5,7 +5,9 @@ import {chartShape} from '../../../index.shapes'
 const AggregateChart = ({
   chart
 }) => (
-  <div>Hehe</div>
+  <div>
+    hehe
+  </div>
 )
 
 AggregateChart.propTypes = {

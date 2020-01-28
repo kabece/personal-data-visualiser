@@ -102,8 +102,7 @@ const rootReducer = createReducer({
           dataSeries: data.find(dataElement => dataElement.name() === dataSourceOption.value),
           timeRange: data.find(dataElement => dataElement.name() === dataSourceOption.value).timerange(),
           dataType: dataSourceOption.dataType,
-          title: dataSourceOption.displayName,
-          plottedParameter: dataSourceOption.plottedParameter
+          title: dataSourceOption.displayName
         }
       }
     }),

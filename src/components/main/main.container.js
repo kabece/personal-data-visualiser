@@ -26,7 +26,7 @@ const Main = ({
 
   return (
     <div className='main'>
-      {Object.keys(charts).map(key => (
+      {Object.keys(charts).filter(key => key !== 'aggregated').map(key => (
         <ChartContainer
           key={key}
           chart={charts[key]}
