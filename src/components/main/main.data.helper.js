@@ -80,7 +80,7 @@ const aggregateMoodData = data =>
   Object.values(groupBy(data, 'full_date'))
     .map(element => ({
       full_date: element[0].full_date,
-      value: element.map(_ => _.value).reduce((left, right) => left + right, 0) / element.length
+      value: element.map(_ => _.value)
     }))
 
 // Below computes the average mood as the value

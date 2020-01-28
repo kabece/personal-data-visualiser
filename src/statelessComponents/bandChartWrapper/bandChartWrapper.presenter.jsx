@@ -12,17 +12,6 @@ import {percentile, median} from 'pondjs'
 
 import {timeRangeShape} from '../../index.shapes'
 
-const baselineStyleLite = {
-  line: {
-    stroke: 'steelblue',
-    strokeWidth: 1,
-    opacity: 0.5
-  },
-  label: {
-    fill: 'steelblue'
-  }
-}
-
 const bandStyle = styler([{key: 'value', color: 'red', width: 10, opacity: 0.9}])
 
 const BandChartWrapper = ({

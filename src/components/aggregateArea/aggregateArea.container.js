@@ -15,10 +15,10 @@ const AggregateArea = ({
 }) => {
   useEffect(() => {
     onDataSourceSelect({
-      dataSourceOption: dataSourceOptions.filter(option => option.value === 'Step Count')[0],
+      dataSourceOption: dataSourceOptions.filter(option => option.value === 'Mood (Aggregated)')[0],
       chartId: 'aggregated'
     })
-  }, [])
+  }, [dataSourceOptions, onDataSourceSelect])
 
   const aggregateChart = charts.aggregated
 

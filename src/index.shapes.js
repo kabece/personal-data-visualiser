@@ -24,7 +24,7 @@ const timeRangeShape = shape({
 
 const chartShape = shape({
   title: string,
-  areBaselinesVisible: bool.isRequired,
+  areBaselinesVisible: bool,
   dataType: oneOf([dataTypes.numerical]),
   chartType: oneOf([chartTypes.lineChart, chartTypes.scatterChart, chartTypes.combinedChart]),
   timeRange: timeRangeShape,
