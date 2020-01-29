@@ -43,7 +43,7 @@ ChartControls.propTypes = {
   dataSourceOptions: optionsShape.isRequired,
   chartTypeOptions: optionsShape.isRequired,
   timeRangeSourceOptions: optionsShape.isRequired,
-  areBaselinesVisible: bool.isRequired,
+  areBaselinesVisible: bool,
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
   onTimeRangeSourceSelect: func.isRequired,

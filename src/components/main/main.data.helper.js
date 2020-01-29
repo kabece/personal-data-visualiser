@@ -1,6 +1,5 @@
 import moment from 'moment'
 import {TimeRange, TimeSeries, TimeRangeEvent, TimeEvent} from 'pondjs'
-import {groupBy} from 'lodash'
 
 import sleepData from '../../data/sleepData.json'
 import moodData from '../../data/moodData.json'
@@ -72,24 +71,10 @@ const prepareSleepData = data =>
 const prepareMoodData = data =>
   data.reverse().map(element => ({
     ...element,
+    mood: element.mood,
     value: moodMappings[element.mood],
     activities: element.activities.split('|').map(value => value.trim())
   }))
-
-const aggregateMoodData = data =>
-  Object.values(groupBy(data, 'full_date'))
-    .map(element => ({
-      full_date: element[0].full_date,
-      value: element.map(_ => _.value)
-    }))
-
-// Below computes the average mood as the value
-// const aggregateMoodData = data =>
-//   Object.values(groupBy(data, 'full_date'))
-//     .map(element => ({
-//       full_date: element[0].full_date,
-//       value: element.map(_ => _.value).reduce((left, right) => left + right, 0) / element.length
-//     }))
 
 const convertTimeInBedToTimeSeries = data => {
   const name = 'Time in Bed'
@@ -139,28 +124,14 @@ const convertMoodDataToTimeSeries = data => {
   return new TimeSeries({name, events})
 }
 
-const convertAggregatedMoodDataToTimeSeries = data => {
-  const name = 'Mood (Aggregated)'
-  const events = data.map(element => new TimeEvent(
-    moment(element.full_date, 'YYYY-MM-DD'),
-    {
-      ...element
-    }
-  ))
-
-  return new TimeSeries({name, events})
-}
-
 const prepareData = () => {
   const preparedSleepData = prepareSleepData(sleepData)
   const preparedMoodData = prepareMoodData(moodData)
-  const aggregatedMoodData = aggregateMoodData(preparedMoodData)
   const timeInBedTimeSeries = convertTimeInBedToTimeSeries(preparedSleepData)
   const stepCountTimeSeries = convertStepCountToTimeSeries(preparedSleepData)
   const sleepQualityTimeSeries = convertSleepQualityToTimeSeries(preparedSleepData)
   const moodDataTimeSeries = convertMoodDataToTimeSeries(preparedMoodData)
-  const aggregaredMoodDataTimeSeries = convertAggregatedMoodDataToTimeSeries(aggregatedMoodData)
-  return [timeInBedTimeSeries, stepCountTimeSeries, sleepQualityTimeSeries, moodDataTimeSeries, aggregaredMoodDataTimeSeries]
+  return [timeInBedTimeSeries, stepCountTimeSeries, sleepQualityTimeSeries, moodDataTimeSeries]
 }
 
 // eslint-disable-next-line import/prefer-default-export

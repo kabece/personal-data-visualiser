@@ -1,7 +1,12 @@
-/* eslint-disable import/prefer-default-export */
+import {avg} from 'pondjs'
+
 export const convertAggregateMoodDataToCalendarFormat = ({aggregateMoodData}) =>
-  aggregateMoodData.dataSeries.toJSON().points.map(element => ({
-    day: element[1],
-    value: Number((element[2].reduce((left, right) => left + right, 0) / element[2].size).toFixed(2))
+  aggregateMoodData.dataSeries.dailyRollup({aggregation: {value: {value: avg()}}}).toJSON().points.map(element => ({
+    day: element[0],
+    value: Number(element[1].toFixed(2))
   }))
+
+export const convertAggregateMoodDataToHeatMapFormat = ({aggregateMoodData}) => {
+  console.log('a', aggregateMoodData.dataSeries.toJSON())
+}
 

@@ -15,12 +15,12 @@ const AggregateArea = ({
 }) => {
   useEffect(() => {
     onDataSourceSelect({
-      dataSourceOption: dataSourceOptions.filter(option => option.value === 'Mood (Aggregated)')[0],
-      chartId: 'aggregated'
+      dataSourceOption: dataSourceOptions.filter(option => option.value === 'Mood')[0],
+      chartId: 'aggregate'
     })
   }, [dataSourceOptions, onDataSourceSelect])
 
-  const aggregateChart = charts.aggregated
+  const aggregateChart = charts.aggregate
 
   return (
     <div className='aggregateArea'>
