@@ -3,6 +3,7 @@ import {objectOf, func} from 'prop-types'
 import {connect} from 'react-redux'
 
 import AggregateChart from './aggregateChart/aggregateChart.presenter'
+import AggregateControls from './aggregateControls/aggregateControls.presenter'
 import AggregatePlaceholder from './aggregatePlaceholder/aggregatePlaceholder.presenter'
 import {setDataSource} from '../../actionCreators'
 import selector from '../../selector'
@@ -24,6 +25,7 @@ const AggregateArea = ({
 
   return (
     <div className='aggregateArea'>
+      <AggregateControls />
       {aggregateChart ? <AggregateChart chart={aggregateChart} /> : <AggregatePlaceholder />}
     </div>
   )

@@ -14,9 +14,6 @@ const initialState = {
     },
     3: {
       areBaselinesVisible: false
-    },
-    4: {
-      areBaselinesVisible: false
     }
   },
   data: [],
