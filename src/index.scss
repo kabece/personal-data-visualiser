@@ -10,7 +10,7 @@ $chartHeight: 270px;
 $chartControlsHeight: 50px;
 
 $aggregateContainerWidth: 1050px;
-$aggregateContainerHeight: 320px;
+$aggregateContainerHeight: 360px;
 $aggregateControlsHeight: 40px;
 $aggregateControlsHeight: 50px;
 
@@ -41,3 +41,4 @@ code {
 @import './components//aggregateArea/aggregateArea.styles.scss';
 @import './statelessComponents/select/select.styles.scss';
 @import './statelessComponents/checkBox/checkBox.styles.scss';
+@import './statelessComponents/heatMapChartWrapper/heatMapChartWrapper.styles.scss';

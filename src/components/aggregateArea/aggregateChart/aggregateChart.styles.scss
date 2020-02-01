@@ -1,5 +1,5 @@
 .aggregateChart {
-  height: $aggregateContainerHeight - $aggregateControlsHeight;
+  height: $aggregateContainerHeight - 2 * $aggregateControlsHeight;
 
   text {
     fill: #ffffff !important;

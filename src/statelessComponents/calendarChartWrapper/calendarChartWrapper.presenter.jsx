@@ -1,12 +1,12 @@
 import React from 'react'
-import {arrayOf, shape, string, oneOfType, number} from 'prop-types'
 import {ResponsiveCalendar} from '@nivo/calendar'
 
-import {timeRangeShape} from '../../index.shapes'
+import {timeRangeShape, chartShape} from '../../index.shapes'
+import {convertAggregateMoodDataToCalendarFormat} from './calendarChartWrapper.helper'
 
-const CalendarChartWrapper = ({data, timeRange}) => (
+const CalendarChartWrapper = ({chart, timeRange}) => (
   <ResponsiveCalendar
-    data={data}
+    data={convertAggregateMoodDataToCalendarFormat({aggregateMoodData: chart})}
     from={timeRange.begin()}
     to={timeRange.end()}
     emptyColor='#eeeeee'
@@ -33,10 +33,7 @@ const CalendarChartWrapper = ({data, timeRange}) => (
 )
 
 CalendarChartWrapper.propTypes = {
-  data: arrayOf(shape({
-    day: string.isRequired,
-    value: oneOfType([number, string]).isRequired
-  })).isRequired,
+  chart: chartShape.isRequired,
   timeRange: timeRangeShape.isRequired
 }
 

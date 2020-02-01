@@ -1,29 +1,19 @@
 import React from 'react'
-import {oneOf} from 'prop-types'
 
 import CalendarChartWrapper from '../../../statelessComponents/calendarChartWrapper/calendarChartWrapper.presenter'
 import HeatMapChartWrapper from '../../../statelessComponents/heatMapChartWrapper/heatMapChartWrapper.presenter'
-import {convertAggregateMoodDataToHeatMapFormat, convertAggregateMoodDataToCalendarFormat} from './aggregateChart.helper'
-import {chartShape, ROLLUP_TYPES, AGGREGATE_CHART_TYPES} from '../../../index.shapes'
+import {chartShape, AGGREGATE_CHART_TYPES} from '../../../index.shapes'
 
-const {DAILY, WEEKLY, MONTHLY} = ROLLUP_TYPES
 const {HEATMAP_CHART, CALENDAR_CHART} = AGGREGATE_CHART_TYPES
 
 const AggregateChart = ({
-  chart,
-  rollupType
+  chart
 }) => {
   switch (chart.chartType) {
     case HEATMAP_CHART:
       return (
         <div className='aggregateChart'>
-          <HeatMapChartWrapper
-            data={convertAggregateMoodDataToHeatMapFormat({
-              aggregateMoodData: chart,
-              isDetailedView: false,
-              rollupType: MONTHLY
-            })}
-          />
+          <HeatMapChartWrapper chart={chart} />
         </div>
       )
     case CALENDAR_CHART:
@@ -31,7 +21,7 @@ const AggregateChart = ({
         <div className='aggregateChart'>
           <CalendarChartWrapper
             timeRange={chart.dataSeries.timerange()}
-            data={convertAggregateMoodDataToCalendarFormat({aggregateMoodData: chart})}
+            chart={chart}
           />
         </div>
       )
@@ -41,8 +31,7 @@ const AggregateChart = ({
 }
 
 AggregateChart.propTypes = {
-  chart: chartShape,
-  rollupType: oneOf([DAILY, WEEKLY, MONTHLY])
+  chart: chartShape
 }
 
 export default AggregateChart
