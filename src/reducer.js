@@ -1,7 +1,7 @@
 import createReducer from '@agillic/create-reducer'
 
 import * as actions from './actions'
-import {dataTypes, chartTypes} from './index.shapes'
+import {dataTypes, chartTypes, AGGREGATE_CHART_TYPES} from './index.shapes'
 
 const initialState = {
   primaryTimeRange: null,
@@ -13,6 +13,9 @@ const initialState = {
       areBaselinesVisible: false
     },
     3: {
+      areBaselinesVisible: false
+    },
+    4: {
       areBaselinesVisible: false
     }
   },
@@ -59,6 +62,18 @@ const initialState = {
       displayName: 'Combined Chart',
       value: chartTypes.combinedChart,
       dataType: dataTypes.numerical
+    }
+  ],
+  aggregateChartTypeOptions: [
+    {
+      displayName: 'Calendar Chart',
+      value: AGGREGATE_CHART_TYPES.CALENDAR_CHART,
+      dataType: dataTypes.categorical
+    },
+    {
+      displayName: 'HeatMap Chart',
+      value: AGGREGATE_CHART_TYPES.HEATMAP_CHART,
+      dataType: dataTypes.categorical
     }
   ]
 }

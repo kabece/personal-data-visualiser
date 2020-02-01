@@ -32,7 +32,6 @@ const groupMoodDataByRollupType = (aggregateMoodData, rollupType) => {
 
 export const convertAggregateMoodDataToHeatMapFormat = ({aggregateMoodData, isDetailedView = false, rollupType}) => {
   const moodDataGroupedByRollupType = groupMoodDataByRollupType(aggregateMoodData, rollupType)
-  console.log('a', moodDataGroupedByRollupType)
   const groupByMoodInWeekday = Object.keys(moodDataGroupedByRollupType)
     .map(key => ({
       weekday: key,

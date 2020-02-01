@@ -1,29 +1,44 @@
 import React from 'react'
 import {oneOf} from 'prop-types'
 
-// import CalendarChartWrapper from '../../../statelessComponents/calendarChartWrapper/calendarChartWrapper.presenter'
+import CalendarChartWrapper from '../../../statelessComponents/calendarChartWrapper/calendarChartWrapper.presenter'
 import HeatMapChartWrapper from '../../../statelessComponents/heatMapChartWrapper/heatMapChartWrapper.presenter'
-// import {convertAggregateMoodDataToCalendarFormat} from './aggregateChart.helper'
-import {convertAggregateMoodDataToHeatMapFormat} from './aggregateChart.helper'
-import {chartShape, ROLLUP_TYPES} from '../../../index.shapes'
+import {convertAggregateMoodDataToHeatMapFormat, convertAggregateMoodDataToCalendarFormat} from './aggregateChart.helper'
+import {chartShape, ROLLUP_TYPES, AGGREGATE_CHART_TYPES} from '../../../index.shapes'
 
 const {DAILY, WEEKLY, MONTHLY} = ROLLUP_TYPES
+const {HEATMAP_CHART, CALENDAR_CHART} = AGGREGATE_CHART_TYPES
 
 const AggregateChart = ({
   chart,
   rollupType
-}) => (
-  <div className='aggregateChart'>
-    {/* <CalendarChartWrapper timeRange={chart.dataSeries.timerange()} data={convertAggregateMoodDataToCalendarFormat({aggregateMoodData: chart})} /> */}
-    <HeatMapChartWrapper
-      data={convertAggregateMoodDataToHeatMapFormat({
-        aggregateMoodData: chart,
-        isDetailedView: false,
-        rollupType: MONTHLY
-      })}
-    />
-  </div>
-)
+}) => {
+  switch (chart.chartType) {
+    case HEATMAP_CHART:
+      return (
+        <div className='aggregateChart'>
+          <HeatMapChartWrapper
+            data={convertAggregateMoodDataToHeatMapFormat({
+              aggregateMoodData: chart,
+              isDetailedView: false,
+              rollupType: MONTHLY
+            })}
+          />
+        </div>
+      )
+    case CALENDAR_CHART:
+      return (
+        <div className='aggregateChart'>
+          <CalendarChartWrapper
+            timeRange={chart.dataSeries.timerange()}
+            data={convertAggregateMoodDataToCalendarFormat({aggregateMoodData: chart})}
+          />
+        </div>
+      )
+    default:
+      return null
+  }
+}
 
 AggregateChart.propTypes = {
   chart: chartShape,
