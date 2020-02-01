@@ -68,7 +68,6 @@ const HeatMapChartWrapper = ({chart}) => {
         motionDamping={9}
         hoverTarget='rowColumn'
         cellHoverOthersOpacity={0.25}
-        minValue={undefined}
       />
     </Fragment>
   )

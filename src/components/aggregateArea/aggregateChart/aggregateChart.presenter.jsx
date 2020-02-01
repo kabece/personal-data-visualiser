@@ -19,10 +19,7 @@ const AggregateChart = ({
     case CALENDAR_CHART:
       return (
         <div className='aggregateChart'>
-          <CalendarChartWrapper
-            timeRange={chart.dataSeries.timerange()}
-            chart={chart}
-          />
+          <CalendarChartWrapper chart={chart} />
         </div>
       )
     default:

@@ -1,5 +1,4 @@
 .aggregateArea {
-  display: flex;
   margin: 0 auto 20px;
   width: $aggregateContainerWidth;
   min-width: $aggregateContainerWidth;
@@ -10,9 +9,9 @@
   box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.45);
   border-radius: 8px;
 
-  .aggregateBlock {
-    width: 0.5 * $aggregateContainerWidth;
-    min-width: 0.5 * $aggregateContainerWidth;
+  .aggregateCharts {
+    display: flex;
+    height: $aggregateContainerHeight - 3 * $aggregateControlsHeight;
   }
 }
 

@@ -5,16 +5,18 @@ import {connect} from 'react-redux'
 import AggregateChart from './aggregateChart/aggregateChart.presenter'
 import AggregateControls from './aggregateControls/aggregateControls.presenter'
 import AggregatePlaceholder from './aggregatePlaceholder/aggregatePlaceholder.presenter'
-import {setDataSource, setChartType} from '../../actionCreators'
+import {setDataSource, setChartType, setTimeRangeSource} from '../../actionCreators'
 import selector from '../../selector'
 import {chartShape, optionsShape} from '../../index.shapes'
 
 const AggregateArea = ({
   charts,
   aggregateChartTypeOptions,
+  timeRangeSourceOptions,
   dataSourceOptions,
   onDataSourceSelect,
-  onChartTypeSelect
+  onChartTypeSelect,
+  onTimeRangeSourceSelect
 }) => {
   useEffect(() => {
     onDataSourceSelect({
@@ -29,26 +31,14 @@ const AggregateArea = ({
 
   return (
     <div className='aggregateArea'>
-      <div className='aggregateBlock'>
-        <AggregateControls
-          chartTypeOptions={aggregateChartTypeOptions}
-          onChartTypeSelect={({selectedValue}) =>
-            onChartTypeSelect({
-              chartId: 'aggregate1',
-              chartTypeOption: aggregateChartTypeOptions.find(option => option.value === selectedValue)
-            })}
-        />
+      <AggregateControls
+        chartTypeOptions={aggregateChartTypeOptions}
+        timeRangeSourceOptions={timeRangeSourceOptions}
+        onChartTypeSelect={onChartTypeSelect}
+        onTimeRangeSourceSelect={onTimeRangeSourceSelect}
+      />
+      <div className='aggregateCharts'>
         {charts.aggregate1?.chartType ? <AggregateChart chart={charts.aggregate1} /> : <AggregatePlaceholder />}
-      </div>
-      <div className='aggregateBlock'>
-        <AggregateControls
-          chartTypeOptions={aggregateChartTypeOptions}
-          onChartTypeSelect={({selectedValue}) =>
-            onChartTypeSelect({
-              chartId: 'aggregate2',
-              chartTypeOption: aggregateChartTypeOptions.find(option => option.value === selectedValue)
-            })}
-        />
         {charts.aggregate2?.chartType ? <AggregateChart chart={charts.aggregate2} /> : <AggregatePlaceholder />}
       </div>
     </div>
@@ -58,14 +48,17 @@ const AggregateArea = ({
 AggregateArea.propTypes = {
   charts: objectOf(chartShape).isRequired,
   aggregateChartTypeOptions: optionsShape.isRequired,
+  timeRangeSourceOptions: optionsShape.isRequired,
   dataSourceOptions: optionsShape.isRequired,
   onDataSourceSelect: func.isRequired,
-  onChartTypeSelect: func.isRequired
+  onChartTypeSelect: func.isRequired,
+  onTimeRangeSourceSelect: func.isRequired
 }
 
 const mapDispatchToProps = dispatch => ({
   onDataSourceSelect: ({dataSourceOption, chartId}) => dispatch(setDataSource({dataSourceOption, chartId})),
-  onChartTypeSelect: ({chartTypeOption, chartId}) => dispatch(setChartType({chartTypeOption, chartId}))
+  onChartTypeSelect: ({chartTypeOption, chartId}) => dispatch(setChartType({chartTypeOption, chartId})),
+  onTimeRangeSourceSelect: ({timeRangeSourceOption, chartId}) => dispatch(setTimeRangeSource({timeRangeSourceOption, chartId})),
 })
 
 export default connect(selector, mapDispatchToProps)(AggregateArea)

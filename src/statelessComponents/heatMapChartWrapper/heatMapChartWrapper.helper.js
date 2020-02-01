@@ -11,21 +11,23 @@ const fillInEmptyGroupings = (group, isDetailedView) =>
   Object.fromEntries((isDetailedView ? heatMapKeysMood : heatMapKeysMoodGroups)
     .map(element => [[element], group[element] || 0]))
 
-const groupMoodDataByRollupType = (aggregateMoodData, rollupType) => {
+const groupMoodDataByRollupType = (dataInTimeRange, rollupType) => {
   switch (rollupType) {
     case DAILY:
-      return groupBy(aggregateMoodData.dataSeries.toJSON().points, value => value[2].split(' ')[0])
+      return groupBy(dataInTimeRange.toJSON().points, value => value[2].split(' ')[0])
     case WEEKLY:
-      return groupBy(aggregateMoodData.dataSeries.toJSON().points, value => value[3])
+      return groupBy(dataInTimeRange.toJSON().points, value => value[3])
     case MONTHLY:
-      return groupBy(aggregateMoodData.dataSeries.toJSON().points, value => value[2].split(' ')[1])
+      return groupBy(dataInTimeRange.toJSON().points, value => value[2].split(' ')[1])
     default:
       return null
   }
 }
 
 export const convertAggregateMoodDataToHeatMapFormat = ({aggregateMoodData, isDetailedView = false, rollupType}) => {
-  const moodDataGroupedByRollupType = groupMoodDataByRollupType(aggregateMoodData, rollupType)
+  const dataInTimeRange = aggregateMoodData.dataSeries.crop(aggregateMoodData.timeRange)
+  console.log(dataInTimeRange)
+  const moodDataGroupedByRollupType = groupMoodDataByRollupType(dataInTimeRange, rollupType)
   const groupByMoodInWeekday = Object.keys(moodDataGroupedByRollupType)
     .map(key => ({
       weekday: key,

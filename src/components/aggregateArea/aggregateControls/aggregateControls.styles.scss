@@ -1,5 +1,20 @@
 .aggregateControls {
-  height: $aggregateControlsHeight;
+  height: 2 * $aggregateControlsHeight;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .topRow, .bottomRow {
+    display: flex;
+    width: 100%;
+    height: $aggregateControlsHeight;
+  }
+
+  .topRow {
+    justify-content: center;
+  }
+
+  .bottomRow {
+    justify-content: space-around;
+  }
 }
