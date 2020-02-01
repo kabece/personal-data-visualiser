@@ -5,7 +5,9 @@ import {oneOf} from 'prop-types'
 import HeatMapChartWrapper from '../../../statelessComponents/heatMapChartWrapper/heatMapChartWrapper.presenter'
 // import {convertAggregateMoodDataToCalendarFormat} from './aggregateChart.helper'
 import {convertAggregateMoodDataToHeatMapFormat} from './aggregateChart.helper'
-import {chartShape} from '../../../index.shapes'
+import {chartShape, ROLLUP_TYPES} from '../../../index.shapes'
+
+const {DAILY, WEEKLY, MONTHLY} = ROLLUP_TYPES
 
 const AggregateChart = ({
   chart,
@@ -13,13 +15,19 @@ const AggregateChart = ({
 }) => (
   <div className='aggregateChart'>
     {/* <CalendarChartWrapper timeRange={chart.dataSeries.timerange()} data={convertAggregateMoodDataToCalendarFormat({aggregateMoodData: chart})} /> */}
-    <HeatMapChartWrapper data={convertAggregateMoodDataToHeatMapFormat({aggregateMoodData: chart, rollupType})} />
+    <HeatMapChartWrapper
+      data={convertAggregateMoodDataToHeatMapFormat({
+        aggregateMoodData: chart,
+        isDetailedView: false,
+        rollupType: MONTHLY
+      })}
+    />
   </div>
 )
 
 AggregateChart.propTypes = {
   chart: chartShape,
-  rollupType: oneOf(['hourly', 'daily', 'monthly'])
+  rollupType: oneOf([DAILY, WEEKLY, MONTHLY])
 }
 
 export default AggregateChart

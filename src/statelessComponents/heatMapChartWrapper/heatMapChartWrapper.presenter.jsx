@@ -1,11 +1,11 @@
 import React from 'react'
-import {arrayOf, objectOf, string} from 'prop-types'
+import {arrayOf, objectOf, string, shape, oneOfType, number} from 'prop-types'
 import {ResponsiveHeatMap} from '@nivo/heatmap'
 
 const HeatMapChartWrapper = ({data}) => (
   <ResponsiveHeatMap
-    data={data}
-    keys={['rad', 'excited', 'good', 'hopeful', 'confident', 'motivated', 'calm', 'meh', 'normal', 'uneasy', 'putting up a fight', 'tired', 'confused', 'bad', 'emotionally tired', 'lonely', 'demotivated', 'awful', 'emotional hijacking']}
+    data={data.values}
+    keys={data.keys}
     indexBy='weekday'
     margin={{top: 100, right: 60, bottom: 60, left: 60}}
     forceSquare
@@ -46,7 +46,10 @@ const HeatMapChartWrapper = ({data}) => (
 )
 
 HeatMapChartWrapper.propTypes = {
-  data: arrayOf(objectOf(string)).isRequired
+  data: shape({
+    values: arrayOf(objectOf(oneOfType([string, number]))).isRequired,
+    keys: arrayOf(string).isRequired
+  }).isRequired
 }
 
 export default HeatMapChartWrapper

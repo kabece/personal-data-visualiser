@@ -11,6 +11,12 @@ const chartTypes = {
   combinedChart: 'COMBINED_CHART'
 }
 
+const ROLLUP_TYPES = {
+  DAILY: 'DAILY',
+  WEEKLY: 'WEEKLY',
+  MONTHLY: 'MONTHLY'
+}
+
 const optionsShape = arrayOf(shape({
   displayName: string.isRequired,
   value: string.isRequired,
@@ -31,4 +37,4 @@ const chartShape = shape({
   dataSeries: object // TODO: proptypes
 })
 
-export {optionsShape, timeRangeShape, dataTypes, chartTypes, chartShape}
+export {optionsShape, timeRangeShape, dataTypes, chartTypes, chartShape, ROLLUP_TYPES}

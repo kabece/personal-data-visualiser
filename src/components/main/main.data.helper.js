@@ -59,6 +59,28 @@ const moodMappings = {
   'emotional hijacking': 1
 }
 
+const moodGroupMappings = {
+  rad: 'amazing',
+  excited: 'amazing',
+  good: 'good',
+  hopeful: 'good',
+  confident: 'good',
+  motivated: 'good',
+  calm: 'good',
+  meh: 'normal',
+  normal: 'normal',
+  uneasy: 'normal',
+  'putting up a fight': 'normal',
+  tired: 'normal',
+  confused: 'normal',
+  bad: 'bad',
+  'emotionally tired': 'bad',
+  lonely: 'bad',
+  demotivated: 'awful',
+  awful: 'awful',
+  'emotional hijacking': 'awful'
+}
+
 const prepareSleepData = data =>
   data.map(element => ({
     start: element['Start'], // eslint-disable-line dot-notation
@@ -73,6 +95,7 @@ const prepareMoodData = data =>
     ...element,
     mood: element.mood,
     value: moodMappings[element.mood],
+    moodGroup: moodGroupMappings[element.mood],
     activities: element.activities.split('|').map(value => value.trim())
   }))
 
