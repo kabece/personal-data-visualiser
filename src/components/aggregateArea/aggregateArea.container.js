@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import AggregateChart from './aggregateChart/aggregateChart.presenter'
 import AggregateControls from './aggregateControls/aggregateControls.presenter'
 import AggregatePlaceholder from './aggregatePlaceholder/aggregatePlaceholder.presenter'
+import MultiChartWrapper from '../../statelessComponents/multiChartWrapper/multiChartWrapper.presenter'
 import {setDataSource, setChartType, setTimeRangeSource} from '../../actionCreators'
 import selector from '../../selector'
 import {chartShape, optionsShape} from '../../index.shapes'
@@ -41,6 +42,18 @@ const AggregateArea = ({
         {charts.aggregate1?.chartType ? <AggregateChart chart={charts.aggregate1} /> : <AggregatePlaceholder />}
         {charts.aggregate2?.chartType ? <AggregateChart chart={charts.aggregate2} /> : <AggregatePlaceholder />}
       </div>
+      <div className='multiChart'>
+        {(charts[1]?.chartType && charts[2]?.chartType && charts.aggregate1?.chartType)
+          ? (
+            <MultiChartWrapper
+              leftChart={charts[1]}
+              rightChart={charts[2]}
+              scatterChart={charts.aggregate1}
+            />
+          )
+          : <AggregatePlaceholder />
+        }
+      </div>
     </div>
   )
 }
@@ -58,7 +71,7 @@ AggregateArea.propTypes = {
 const mapDispatchToProps = dispatch => ({
   onDataSourceSelect: ({dataSourceOption, chartId}) => dispatch(setDataSource({dataSourceOption, chartId})),
   onChartTypeSelect: ({chartTypeOption, chartId}) => dispatch(setChartType({chartTypeOption, chartId})),
-  onTimeRangeSourceSelect: ({timeRangeSourceOption, chartId}) => dispatch(setTimeRangeSource({timeRangeSourceOption, chartId})),
+  onTimeRangeSourceSelect: ({timeRangeSourceOption, chartId}) => dispatch(setTimeRangeSource({timeRangeSourceOption, chartId}))
 })
 
 export default connect(selector, mapDispatchToProps)(AggregateArea)

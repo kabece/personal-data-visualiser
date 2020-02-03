@@ -11,7 +11,11 @@
 
   .aggregateCharts {
     display: flex;
-    height: $aggregateContainerHeight - 3 * $aggregateControlsHeight;
+    height: $aggregateContainerHeight - 3 * $aggregateControlsHeight - $aggregateMultiChartHeight;
+  }
+
+  .multiChart {
+    height: $aggregateMultiChartHeight;
   }
 }
 
