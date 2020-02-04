@@ -43,7 +43,7 @@ const AggregateArea = ({
         {charts.aggregate2?.chartType ? <AggregateChart chart={charts.aggregate2} /> : <AggregatePlaceholder />}
       </div>
       <div className='multiChart'>
-        {(charts[1]?.chartType && charts[2]?.chartType && charts.aggregate1?.chartType)
+        {(charts[1]?.chartType && charts[2]?.chartType)
           ? (
             <MultiChartWrapper
               leftChart={charts[1]}

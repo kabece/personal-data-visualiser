@@ -23,7 +23,8 @@ const CombinedChartWrapper = ({
 
   const getTrackerValues = () => highlightedElement && [{
     label: 'Value',
-    value: highlightedElement.event.get(highlightedElement.column)
+    // eslint-disable-next-line prefer-template
+    value: highlightedElement.event.get(highlightedElement.column) + ' '
   }]
 
   const trackerStyle = {

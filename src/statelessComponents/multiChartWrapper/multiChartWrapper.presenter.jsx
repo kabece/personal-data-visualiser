@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
   Charts,
   ChartContainer,
@@ -18,15 +18,32 @@ const style = styler([
   {key: 'value', color: '#CC862A'}
 ])
 
+const trackerStyle = {
+  line: {
+    stroke: 'white',
+    strokeDasharray: 2
+  },
+  box: {
+    fill: 'black'
+  }
+}
+
 const MultiChartWrapper = ({
   leftChart,
   rightChart,
   scatterChart
 }) => {
+  const [highlightedElement, setHighlightedElement] = useState(null)
+
   const leftDataSeries = leftChart.dataSeries.renameColumns({renameMap: {value: 'left'}})
   const rightDataSeries = rightChart.dataSeries.renameColumns({renameMap: {value: 'right'}})
   const scatterDataSeries = scatterChart.dataSeries.dailyRollup({aggregation: {value: {value: avg()}, count: {value: count()}}})
-  console.log('a', scatterDataSeries.toJSON())
+
+  const getTrackerValues = () => highlightedElement && [{
+    label: 'Average mood: ',
+    // eslint-disable-next-line prefer-template
+    value: highlightedElement.event.get(highlightedElement.column) + ''
+  }]
 
   return (
     <ChartContainer
@@ -40,13 +57,15 @@ const MultiChartWrapper = ({
       padding={20}
       paddingTop={5}
       paddingBottom={0}
-      enableDragZoom
       timeRange={leftChart.timeRange}
       maxTime={leftDataSeries.range().end()}
       minTime={leftDataSeries.range().begin()}
-      width={1000}
+      width={1040}
     >
-      <ChartRow height='200'>
+      <ChartRow
+        height='200'
+        trackerShowTime
+      >
         <YAxis
           id='left'
           axis='left'
@@ -59,12 +78,27 @@ const MultiChartWrapper = ({
           style={style.axisStyle('left')}
         />
         <Charts>
+          <ScatterChart
+            key='left'
+            axis='left'
+            series={leftDataSeries}
+            columns={['left']}
+            style={style}
+          />
           <LineChart
             axis='left'
             series={leftDataSeries}
             columns={['left']}
             style={style}
             interpolation='curveLinear'
+          />
+
+          <ScatterChart
+            key='right'
+            axis='right'
+            series={rightDataSeries}
+            columns={['right']}
+            style={style}
           />
           <LineChart
             axis='right'
@@ -73,12 +107,19 @@ const MultiChartWrapper = ({
             style={style}
             interpolation='curveLinear'
           />
+
           <ScatterChart
             axis='value'
             series={scatterDataSeries}
             columns={['value']}
             style={style}
-            radius={event => event.get('count')}
+            radius={event => 1.5 * event.get('count')}
+            highlight={highlightedElement}
+            info={getTrackerValues()}
+            infoHeight={30}
+            infoWidth={125}
+            infoStyle={trackerStyle}
+            onMouseNear={newHighlightedElement => setHighlightedElement(newHighlightedElement)}
           />
         </Charts>
         <YAxis
@@ -102,7 +143,6 @@ const MultiChartWrapper = ({
           format=',.0f'
           width='80'
           type='linear'
-          labelOffset={70}
           style={style.axisStyle('value')}
         />
       </ChartRow>
