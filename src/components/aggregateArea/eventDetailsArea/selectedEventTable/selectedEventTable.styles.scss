@@ -1,0 +1,36 @@
+$selectedEventTableWidth: 0.5 * $aggregateContainerWidth;
+
+.selectedEventTable {
+  .headers {
+    display: flex;
+    border-bottom: 1px solid;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    justify-content: space-around;
+
+    :nth-child(1), :nth-child(2) {
+      width: 0.15 * $selectedEventTableWidth;
+      text-align: center;
+    }
+
+    :nth-child(3) {
+      width: 0.7 * $selectedEventTableWidth;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+
+    :nth-child(1), :nth-child(2) {
+      width: 0.15 * $selectedEventTableWidth;
+      text-align: center;
+    }
+
+    :nth-child(3) {
+      width: 0.7 * $selectedEventTableWidth;
+    }
+  }
+}

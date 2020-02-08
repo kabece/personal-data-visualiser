@@ -1,0 +1,17 @@
+.eventDetailsHeader {
+  text-align: center;
+  font-weight: 400;
+}
+
+.eventDetailsArea {
+  height: $aggregateEventDetailsAreaHeight;
+  padding: 15px;
+  display: flex;
+  font-weight: 300;
+
+  .selectedEvent {
+    width: 0.5 * $aggregateContainerWidth;
+  }
+}
+
+@import './selectedEventTable/selectedEventTable.styles.scss'

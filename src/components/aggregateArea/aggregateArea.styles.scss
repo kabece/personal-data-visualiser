@@ -2,7 +2,7 @@
   margin: 0 auto 20px;
   width: $aggregateContainerWidth;
   min-width: $aggregateContainerWidth;
-  height: $aggregateContainerHeight;
+  // height: $aggregateContainerHeight;
   background-color: $chartBackgroundColor;
   color: $chartFontColor;
   font-weight: 200;
@@ -11,7 +11,7 @@
 
   .aggregateCharts {
     display: flex;
-    height: $aggregateContainerHeight - 3 * $aggregateControlsHeight - $aggregateMultiChartHeight;
+    height: $aggregateChartsHeight;
   }
 
   .multiChart {
@@ -22,3 +22,4 @@
 @import './aggregatePlaceholder/aggregatePlaceholder.styles.scss';
 @import './aggregateChart/aggregateChart.styles.scss';
 @import './aggregateControls/aggregateControls.styles.scss';
+@import './eventDetailsArea/eventDetailsArea.styles.scss';

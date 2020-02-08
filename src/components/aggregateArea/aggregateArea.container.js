@@ -1,17 +1,20 @@
 import React, {useEffect} from 'react'
-import {objectOf, func} from 'prop-types'
+import {objectOf, func, instanceOf, object, arrayOf} from 'prop-types'
 import {connect} from 'react-redux'
 
 import AggregateChart from './aggregateChart/aggregateChart.presenter'
 import AggregateControls from './aggregateControls/aggregateControls.presenter'
 import AggregatePlaceholder from './aggregatePlaceholder/aggregatePlaceholder.presenter'
+import EventDetailsArea from './eventDetailsArea/eventDetailsArea.presenter'
 import MultiChartWrapper from '../../statelessComponents/multiChartWrapper/multiChartWrapper.presenter'
 import {setDataSource, setChartType, setTimeRangeSource, selectEventTime} from '../../actionCreators'
 import selector from '../../selector'
 import {chartShape, optionsShape} from '../../index.shapes'
 
 const AggregateArea = ({
+  selectedEventTime,
   charts,
+  data,
   aggregateChartTypeOptions,
   timeRangeSourceOptions,
   dataSourceOptions,
@@ -56,18 +59,22 @@ const AggregateArea = ({
           : <AggregatePlaceholder />
         }
       </div>
+      {selectedEventTime && <EventDetailsArea selectedEventTime={selectedEventTime} data={data} />}
     </div>
   )
 }
 
 AggregateArea.propTypes = {
+  selectedEventTime: instanceOf(Date),
   charts: objectOf(chartShape).isRequired,
+  data: arrayOf(object),
   aggregateChartTypeOptions: optionsShape.isRequired,
   timeRangeSourceOptions: optionsShape.isRequired,
   dataSourceOptions: optionsShape.isRequired,
   onDataSourceSelect: func.isRequired,
   onChartTypeSelect: func.isRequired,
-  onTimeRangeSourceSelect: func.isRequired
+  onTimeRangeSourceSelect: func.isRequired,
+  onSelectEventTime: func.isRequired
 }
 
 const mapDispatchToProps = dispatch => ({
