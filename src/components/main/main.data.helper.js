@@ -1,15 +1,15 @@
 import moment from 'moment'
-import {TimeRange, TimeSeries, TimeRangeEvent, TimeEvent} from 'pondjs'
+import {TimeSeries, TimeEvent} from 'pondjs'
 
 import sleepData from '../../data/sleepData.json'
 import moodData from '../../data/moodData.json'
 
 const timeFormat = 'YYYY-MM-DD HH:mm:ss'
 
-const createTimeRange = (beginTime, endTime) => new TimeRange(
-  moment(beginTime, timeFormat),
-  moment(endTime, timeFormat)
-)
+// const createTimeRange = (beginTime, endTime) => new TimeRange(
+//   moment(beginTime, timeFormat),
+//   moment(endTime, timeFormat)
+// )
 
 const prepareTimeInBed = timeInBed => Number(timeInBed.split(':')[0]) + Number(timeInBed.split(':')[1]) / 60
 const prepareSleepQuality = sleepQuality => Number(sleepQuality.slice(0, -1))
@@ -101,8 +101,8 @@ const prepareMoodData = data =>
 
 const convertTimeInBedToTimeSeries = data => {
   const name = 'Time in Bed'
-  const events = data.map(element => new TimeRangeEvent(
-    createTimeRange(element.start, element.end),
+  const events = data.map(element => new TimeEvent(
+    moment(element.start),
     {
       value: prepareTimeInBed(element.timeInBed)
     }
@@ -113,8 +113,8 @@ const convertTimeInBedToTimeSeries = data => {
 
 const convertStepCountToTimeSeries = data => {
   const name = 'Step Count'
-  const events = data.map(element => new TimeRangeEvent(
-    createTimeRange(element.start, element.end),
+  const events = data.map(element => new TimeEvent(
+    moment(element.start),
     {
       value: element.activity
     }
@@ -125,8 +125,8 @@ const convertStepCountToTimeSeries = data => {
 
 const convertSleepQualityToTimeSeries = data => {
   const name = 'Sleep Quality (%)'
-  const events = data.map(element => new TimeRangeEvent(
-    createTimeRange(element.start, element.end),
+  const events = data.map(element => new TimeEvent(
+    moment(element.start),
     {
       value: prepareSleepQuality(element.sleepQuality)
     }

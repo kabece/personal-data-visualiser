@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {func} from 'prop-types'
 import {
   Charts,
   ChartContainer,
@@ -31,7 +32,8 @@ const trackerStyle = {
 const MultiChartWrapper = ({
   leftChart,
   rightChart,
-  scatterChart
+  scatterChart,
+  onSelectEventTime
 }) => {
   const [highlightedElement, setHighlightedElement] = useState(null)
 
@@ -120,6 +122,7 @@ const MultiChartWrapper = ({
             infoWidth={125}
             infoStyle={trackerStyle}
             onMouseNear={newHighlightedElement => setHighlightedElement(newHighlightedElement)}
+            onSelectionChange={({event}) => onSelectEventTime({selectedEventTime: event.timestamp()})}
           />
         </Charts>
         <YAxis
@@ -153,7 +156,8 @@ const MultiChartWrapper = ({
 MultiChartWrapper.propTypes = {
   leftChart: chartShape.isRequired,
   rightChart: chartShape.isRequired,
-  scatterChart: chartShape.isRequired
+  scatterChart: chartShape.isRequired,
+  onSelectEventTime: func.isRequired
 }
 
 export default MultiChartWrapper

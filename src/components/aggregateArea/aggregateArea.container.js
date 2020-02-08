@@ -6,7 +6,7 @@ import AggregateChart from './aggregateChart/aggregateChart.presenter'
 import AggregateControls from './aggregateControls/aggregateControls.presenter'
 import AggregatePlaceholder from './aggregatePlaceholder/aggregatePlaceholder.presenter'
 import MultiChartWrapper from '../../statelessComponents/multiChartWrapper/multiChartWrapper.presenter'
-import {setDataSource, setChartType, setTimeRangeSource} from '../../actionCreators'
+import {setDataSource, setChartType, setTimeRangeSource, selectEventTime} from '../../actionCreators'
 import selector from '../../selector'
 import {chartShape, optionsShape} from '../../index.shapes'
 
@@ -17,7 +17,8 @@ const AggregateArea = ({
   dataSourceOptions,
   onDataSourceSelect,
   onChartTypeSelect,
-  onTimeRangeSourceSelect
+  onTimeRangeSourceSelect,
+  onSelectEventTime
 }) => {
   useEffect(() => {
     onDataSourceSelect({
@@ -49,6 +50,7 @@ const AggregateArea = ({
               leftChart={charts[1]}
               rightChart={charts[2]}
               scatterChart={charts.aggregate1}
+              onSelectEventTime={onSelectEventTime}
             />
           )
           : <AggregatePlaceholder />
@@ -71,7 +73,8 @@ AggregateArea.propTypes = {
 const mapDispatchToProps = dispatch => ({
   onDataSourceSelect: ({dataSourceOption, chartId}) => dispatch(setDataSource({dataSourceOption, chartId})),
   onChartTypeSelect: ({chartTypeOption, chartId}) => dispatch(setChartType({chartTypeOption, chartId})),
-  onTimeRangeSourceSelect: ({timeRangeSourceOption, chartId}) => dispatch(setTimeRangeSource({timeRangeSourceOption, chartId}))
+  onTimeRangeSourceSelect: ({timeRangeSourceOption, chartId}) => dispatch(setTimeRangeSource({timeRangeSourceOption, chartId})),
+  onSelectEventTime: ({selectedEventTime}) => dispatch(selectEventTime({selectedEventTime}))
 })
 
 export default connect(selector, mapDispatchToProps)(AggregateArea)

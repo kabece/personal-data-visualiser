@@ -33,3 +33,8 @@ export const loadData = ({data}) => ({
   type: actions.LOAD_DATA,
   data
 })
+
+export const selectEventTime = ({selectedEventTime}) => ({
+  type: actions.SELECT_EVENT_TIME,
+  selectedEventTime
+})

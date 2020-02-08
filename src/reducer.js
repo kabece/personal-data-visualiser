@@ -4,7 +4,7 @@ import * as actions from './actions'
 import {dataTypes, chartTypes, AGGREGATE_CHART_TYPES} from './index.shapes'
 
 const initialState = {
-  primaryTimeRange: null,
+  selectedEventTime: null,
   charts: {
     1: {
       areBaselinesVisible: false
@@ -151,6 +151,11 @@ const rootReducer = createReducer({
           areBaselinesVisible: !previousCharts[chartId].areBaselinesVisible
         }
       }
+    }),
+    [actions.SELECT_EVENT_TIME]: ({
+      action: {selectedEventTime}
+    }) => ({
+      selectedEventTime
     })
   },
   options: {
