@@ -1,0 +1,14 @@
+.geolocationDisplay {
+  height: 400px;
+  width: 0.45 * $aggregateContainerWidth;
+  padding: 20px;
+
+  .markerOverlay {
+    width: 60px;
+    height: 22px;
+    font-weight: 500;
+    background-color: gray;
+    border-radius: 8px;
+    text-align: center;
+  }
+}

@@ -3,6 +3,7 @@ import {instanceOf, object, arrayOf} from 'prop-types'
 
 import SelectedEventTable from './selectedEventTable/selectedEventTable.presenter'
 import DayStatisticsArea from './dayStatisticsArea/dayStatisticsArea.presenter'
+import GeolocationDisplay from './geolocationDisplay/geolocationDisplay.presenter'
 
 const EventDetailsArea = ({
   selectedEventTime,
@@ -17,13 +18,16 @@ const EventDetailsArea = ({
         <div>Selected event details for: </div>
         <div>{new Date(selectedEventTime).toDateString()}</div>
       </div>
-      <div className='eventDetailsArea'>
+      <div className='statisticsArea'>
         <div className='selectedEvent'>
           <SelectedEventTable selectedEventData={selectedEventData} />
         </div>
         <div>
           <DayStatisticsArea formattedSelectedEventTime={formattedSelectedEventTime} data={data} />
         </div>
+      </div>
+      <div className='contextualDataArea'>
+        <GeolocationDisplay selectedEventTime={selectedEventTime} />
       </div>
     </Fragment>
   )

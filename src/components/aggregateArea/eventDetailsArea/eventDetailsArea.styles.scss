@@ -3,7 +3,7 @@
   font-weight: 400;
 }
 
-.eventDetailsArea {
+.statisticsArea {
   height: $aggregateEventDetailsAreaHeight;
   padding: 15px;
   display: flex;
@@ -16,3 +16,4 @@
 
 @import './selectedEventTable/selectedEventTable.styles.scss';
 @import './dayStatisticsArea/dayStatisticsArea.styles.scss';
+@import './geolocationDisplay/geolocationDisplay.styles.scss';
