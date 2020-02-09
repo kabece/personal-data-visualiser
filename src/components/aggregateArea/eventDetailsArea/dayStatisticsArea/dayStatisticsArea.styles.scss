@@ -1,0 +1,21 @@
+$dayStatisticsAreaWidth: 0.45 * $aggregateContainerWidth;
+
+.dayStatisticsArea {
+  width: $dayStatisticsAreaWidth;
+
+  .dayStatisticsRow {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 15px;
+
+    .averageValue, .onThisDayValue {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .onThisDayValue {
+      font-weight: 500;
+    }
+  }
+}

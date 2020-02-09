@@ -2,6 +2,7 @@ import React, {Fragment} from 'react'
 import {instanceOf, object, arrayOf} from 'prop-types'
 
 import SelectedEventTable from './selectedEventTable/selectedEventTable.presenter'
+import DayStatisticsArea from './dayStatisticsArea/dayStatisticsArea.presenter'
 
 const EventDetailsArea = ({
   selectedEventTime,
@@ -9,8 +10,6 @@ const EventDetailsArea = ({
 }) => {
   const formattedSelectedEventTime = `${selectedEventTime.getFullYear()}-${selectedEventTime.getMonth() + 1}-${selectedEventTime.getDate()}`
   const selectedEventData = data[3].toJSON().points.filter(point => point[1] === formattedSelectedEventTime)
-
-  console.log(selectedEventData, formattedSelectedEventTime)
 
   return (
     <Fragment>
@@ -23,7 +22,7 @@ const EventDetailsArea = ({
           <SelectedEventTable selectedEventData={selectedEventData} />
         </div>
         <div>
-    On that day
+          <DayStatisticsArea formattedSelectedEventTime={formattedSelectedEventTime} data={data} />
         </div>
       </div>
     </Fragment>

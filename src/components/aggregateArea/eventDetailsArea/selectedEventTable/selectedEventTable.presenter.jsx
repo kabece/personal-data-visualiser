@@ -4,7 +4,7 @@ import {array} from 'prop-types'
 const SelectedEventTable = ({selectedEventData}) => (
   <div className='selectedEventTable'>
     <div className='headers'>
-      <div>Entry time</div>
+      <div>Time</div>
       <div>Mood</div>
       <div>Activities</div>
     </div>
