@@ -10,18 +10,28 @@ const DayStatisticsArea = ({formattedSelectedEventTime, data}) => {
 
   return (
     <div className='dayStatisticsArea'>
-      {data.filter(_ => _.name() !== 'Mood').map(element => (
-        <div key={element.name()} className='dayStatisticsRow'>
-          <div className='averageValue'>
-            <div>{`The average value of ${element.name()} is:`}</div>
-            <div>{element.avg().toFixed(2)}</div>
+      {data.filter(_ => _.name() !== 'Mood').map(element => {
+        const average = element.avg().toFixed(2)
+        const valueForSelectedDay = findElement(element.toJSON().points)
+        const difference = ((valueForSelectedDay - average) / average * 100).toFixed(2)
+
+        return (
+          <div key={element.name()} className='dayStatisticsRow'>
+            <div>
+              <span>{`Your ${element.name()} was `}</span>
+              <span className='value'>{`${element.avg().toFixed(3)}`}</span>
+            </div>
+            <div>
+              <span>which is</span>
+              <span className={`difference ${difference > 0 ? 'positive' : 'negative'}`}>{` ${difference.toString().replace('-', '')}% ${difference > 0 ? 'higher' : 'lower'}`}</span>
+            </div>
+            <div>
+              <span>than the average (</span>
+              <span className='average'>{`${average})`}</span>
+            </div>
           </div>
-          <div className='onThisDayValue'>
-            <div>On this day you have registered:</div>
-            <div>{findElement(element.toJSON().points)}</div>
-          </div>
-        </div>
-      ))}
+        )
+      })}
     </div>
   )
 }

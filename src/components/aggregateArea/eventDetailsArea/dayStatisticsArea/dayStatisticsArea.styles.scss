@@ -8,14 +8,18 @@ $dayStatisticsAreaWidth: 0.45 * $aggregateContainerWidth;
     flex-direction: column;
     align-items: stretch;
     padding-top: 15px;
+    text-align: center;
 
-    .averageValue, .onThisDayValue {
-      display: flex;
-      justify-content: space-between;
+    .value, .difference, .average {
+      font-weight: 500;
     }
 
-    .onThisDayValue {
-      font-weight: 500;
+    .positive {
+      color: limegreen;
+    }
+
+    .negative {
+      color: crimson;
     }
   }
 }

@@ -1,17 +1,18 @@
 $selectedEventTableWidth: 0.5 * $aggregateContainerWidth;
 
 .selectedEventTable {
+  margin-right: 10px;
+
   .headers {
     display: flex;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.8);
     font-weight: 400;
     padding-bottom: 5px;
-    margin-right: 10px;
     justify-content: space-around;
 
     :nth-child(1), :nth-child(2) {
       width: 0.15 * $selectedEventTableWidth;
-      text-align: center;
+      text-align: left;
     }
 
     :nth-child(3) {
@@ -23,10 +24,11 @@ $selectedEventTableWidth: 0.5 * $aggregateContainerWidth;
     display: flex;
     justify-content: space-around;
     padding: 5px 0;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.2);
 
     :nth-child(1), :nth-child(2) {
       width: 0.15 * $selectedEventTableWidth;
-      text-align: center;
+      text-align: left;
     }
 
     :nth-child(3) {

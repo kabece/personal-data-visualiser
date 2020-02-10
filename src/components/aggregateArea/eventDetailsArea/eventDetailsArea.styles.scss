@@ -1,11 +1,15 @@
 .eventDetailsHeader {
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 20px;
+
+  :nth-child(2) {
+    font-size: 30px;
+  }
 }
 
 .statisticsArea {
-  height: $aggregateEventDetailsAreaHeight;
-  padding: 15px;
+  padding: 25px;
   display: flex;
   font-weight: 300;
 

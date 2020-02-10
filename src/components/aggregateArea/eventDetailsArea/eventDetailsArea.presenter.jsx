@@ -15,7 +15,7 @@ const EventDetailsArea = ({
   return (
     <Fragment>
       <div className='eventDetailsHeader'>
-        <div>Selected event details for: </div>
+        <div>Event details for: </div>
         <div>{new Date(selectedEventTime).toDateString()}</div>
       </div>
       <div className='statisticsArea'>

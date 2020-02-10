@@ -24,6 +24,9 @@ const GeolocationDisplay = ({selectedEventTime}) => {
 
   return (
     <div className='geolocationDisplay'>
+      <div className='geolocationHeader'>
+        Your location history
+      </div>
       <Map
         defaultCenter={getCoordinatesForLocation(locationsForSelectedDay[Math.floor(locationsForSelectedDay.length / 2)])}
         defaultZoom={12}

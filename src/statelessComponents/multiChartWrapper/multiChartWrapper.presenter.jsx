@@ -16,7 +16,7 @@ import {chartShape} from '../../index.shapes'
 const style = styler([
   {key: 'left', color: '#CA4040'},
   {key: 'right', color: '#9467bd'},
-  {key: 'value', color: '#CC862A'}
+  {key: 'value', color: '#CC862A', highlighted: '#ffffff'}
 ])
 
 const trackerStyle = {
