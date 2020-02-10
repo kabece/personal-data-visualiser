@@ -36,6 +36,7 @@ const AggregateArea = ({
 
   return (
     <div className='aggregateArea'>
+      <div className='aggregateAreaHeader'>Aggregate Data</div>
       <AggregateControls
         chartTypeOptions={aggregateChartTypeOptions}
         timeRangeSourceOptions={timeRangeSourceOptions}

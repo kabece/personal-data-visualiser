@@ -2,6 +2,10 @@ $dayStatisticsAreaWidth: 0.45 * $aggregateContainerWidth;
 
 .dayStatisticsArea {
   width: $dayStatisticsAreaWidth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 
   .dayStatisticsRow {
     display: flex;

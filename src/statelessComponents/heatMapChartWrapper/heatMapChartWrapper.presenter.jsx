@@ -37,7 +37,7 @@ const HeatMapChartWrapper = ({chart}) => {
         data={data.values}
         keys={data.keys}
         indexBy='weekday'
-        margin={{top: 100, right: 60, bottom: 60, left: 60}}
+        margin={{top: 20, right: 60, bottom: 120, left: 60}}
         forceSquare
         axisTop={{orient: 'top', tickSize: 5, tickPadding: 5, tickRotation: -40, legend: '', legendOffset: 36}}
         axisRight={null}
