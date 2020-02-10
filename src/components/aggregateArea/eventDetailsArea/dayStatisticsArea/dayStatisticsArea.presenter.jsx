@@ -13,14 +13,14 @@ const DayStatisticsArea = ({formattedSelectedEventTime, data}) => {
       {data.filter(_ => _.name() !== 'Mood').map(element => {
         const average = element.avg().toFixed(2)
         const selectedDayElement = findElement(element.toJSON().points)
-        const valueForSelectedDay = selectedDayElement && selectedDayElement[1].toFixed(2)
+        const valueForSelectedDay = selectedDayElement && selectedDayElement[1].toFixed(3)
         const difference = valueForSelectedDay && ((valueForSelectedDay - average) / average * 100).toFixed(2)
 
         return selectedDayElement ? (
           <div key={element.name()} className='dayStatisticsRow'>
             <div>
               <span>{`Your ${element.name()} was `}</span>
-              <span className='value'>{`${element.avg().toFixed(3)}`}</span>
+              <span className='value'>{`${valueForSelectedDay}`}</span>
             </div>
             <div>
               <span>which is</span>
