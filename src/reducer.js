@@ -11,6 +11,12 @@ const initialState = {
     },
     2: {
       areBaselinesVisible: false
+    },
+    3: {
+      areBaselinesVisible: false
+    },
+    4: {
+      areBaselinesVisible: false
     }
   },
   data: [],
