@@ -1,8 +1,9 @@
 .aggregateControls {
-  height: 2 * $aggregateControlsHeight;
+  height: $aggregateControlsHeight;
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 15px 0;
 
   .topRow, .bottomRow {
     display: flex;

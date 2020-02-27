@@ -17,7 +17,7 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <div className='header'>Personal Data Visualizer</div>
+    <div className='header'>Inspector Area</div>
     <Main />
     <AggregateArea />
   </Provider>,

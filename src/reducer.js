@@ -11,13 +11,13 @@ const initialState = {
     },
     2: {
       areBaselinesVisible: false
-    },
-    3: {
-      areBaselinesVisible: false
-    },
-    4: {
-      areBaselinesVisible: false
     }
+    // 3: {
+    //   areBaselinesVisible: false
+    // },
+    // 4: {
+    //   areBaselinesVisible: false
+    // }
   },
   data: [],
   dataSourceOptions: [
@@ -109,12 +109,14 @@ const rootReducer = createReducer({
     }) => ({
       charts: {
         ...previousCharts,
-        [chartId]: {
+        [chartId]: dataSourceOption ? {
           ...previousCharts[chartId],
           dataSeries: data.find(dataElement => dataElement.name() === dataSourceOption.value),
           timeRange: data.find(dataElement => dataElement.name() === dataSourceOption.value).timerange(),
           dataType: dataSourceOption.dataType,
           title: dataSourceOption.displayName
+        } : {
+          areBaselinesVisible: false
         }
       }
     }),

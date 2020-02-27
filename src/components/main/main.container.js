@@ -36,7 +36,7 @@ const Main = ({
           onDataSourceSelect={({selectedValue}) =>
             onDataSourceSelect({
               chartId: key,
-              dataSourceOption: dataSourceOptions.find(option => option.value === selectedValue) // TODO: these functions could be refactored out to a helper file
+              dataSourceOption: dataSourceOptions.find(option => option.value === selectedValue)
             })}
           onChartTypeSelect={({selectedValue}) =>
             onChartTypeSelect({

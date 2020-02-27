@@ -28,8 +28,16 @@ const AggregateArea = ({
       dataSourceOption: dataSourceOptions.filter(option => option.value === 'Mood')[0],
       chartId: 'aggregate1'
     })
+    onChartTypeSelect({
+      chartTypeOption: aggregateChartTypeOptions[0],
+      chartId: 'aggregate1'
+    })
     onDataSourceSelect({
       dataSourceOption: dataSourceOptions.filter(option => option.value === 'Mood')[0],
+      chartId: 'aggregate2'
+    })
+    onChartTypeSelect({
+      chartTypeOption: aggregateChartTypeOptions[1],
       chartId: 'aggregate2'
     })
   }, [dataSourceOptions, onDataSourceSelect])
@@ -37,16 +45,6 @@ const AggregateArea = ({
   return (
     <div className='aggregateArea'>
       <div className='aggregateAreaHeader'>Aggregate Data</div>
-      <AggregateControls
-        chartTypeOptions={aggregateChartTypeOptions}
-        timeRangeSourceOptions={timeRangeSourceOptions}
-        onChartTypeSelect={onChartTypeSelect}
-        onTimeRangeSourceSelect={onTimeRangeSourceSelect}
-      />
-      <div className='aggregateCharts'>
-        {charts.aggregate1?.chartType ? <AggregateChart chart={charts.aggregate1} /> : <AggregatePlaceholder />}
-        {charts.aggregate2?.chartType ? <AggregateChart chart={charts.aggregate2} /> : <AggregatePlaceholder />}
-      </div>
       <div className='multiChart'>
         {(charts[1]?.chartType && charts[2]?.chartType)
           ? (
@@ -59,6 +57,24 @@ const AggregateArea = ({
           )
           : <AggregatePlaceholder />
         }
+      </div>
+      <AggregateControls
+        timeRangeSourceOptions={timeRangeSourceOptions}
+        onTimeRangeSourceSelect={onTimeRangeSourceSelect}
+      />
+      <div className='aggregateCharts'>
+        {(charts[1]?.chartType && charts[2]?.chartType) ? (
+          <div>
+            <div className='calendarChartHeader'>The numbers represent the average mood rating for the given day</div>
+            <AggregateChart chart={charts.aggregate1} />
+          </div>
+        ) : <AggregatePlaceholder />}
+        {(charts[1]?.chartType && charts[2]?.chartType) ? (
+          <div>
+            <div classNames='heatMapChartHeader'>The numbers represent the number of readings with given mood ratings</div>
+            <AggregateChart chart={charts.aggregate2} />
+          </div>
+        ) : <AggregatePlaceholder />}
       </div>
       {selectedEventTime && <EventDetailsArea selectedEventTime={selectedEventTime} data={data} />}
     </div>

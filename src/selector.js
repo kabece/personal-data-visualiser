@@ -6,9 +6,12 @@ export default createSelector(
   mainSelector,
   main => ({
     ...main,
-    timeRangeSourceOptions: Object.keys(main.charts).map(key => ({
-      displayName: main.charts[key].title || '',
-      value: key
-    }))
+    timeRangeSourceOptions: Object.keys(main.charts)
+      .filter(key => main.charts[key].dataType && main.charts[key].chartType)
+      .filter(key => key !== 'aggregate1' && key !== 'aggregate2')
+      .map(key => ({
+        displayName: main.charts[key].title || '',
+        value: key
+      }))
   })
 )

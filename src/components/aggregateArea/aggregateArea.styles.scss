@@ -19,6 +19,11 @@
   .aggregateCharts {
     display: flex;
     height: $aggregateChartsHeight;
+
+    .calendarChartHeader, .heatMapChartHeader {
+      text-align: center;
+      padding: 15px 0;
+    }
   }
 
   .multiChart {

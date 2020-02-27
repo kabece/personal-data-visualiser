@@ -5,9 +5,7 @@ import Select from '../../../statelessComponents/select/select.presenter'
 import {optionsShape} from '../../../index.shapes'
 
 const AggregateControls = ({
-  chartTypeOptions,
   timeRangeSourceOptions,
-  onChartTypeSelect,
   onTimeRangeSourceSelect
 }) => (
   <div className='aggregateControls'>
@@ -27,33 +25,11 @@ const AggregateControls = ({
         }}
       />
     </div>
-    <div className='bottomRow'>
-      <Select
-        options={chartTypeOptions}
-        label='Chart Type: '
-        onChange={({selectedValue}) =>
-          onChartTypeSelect({
-            chartId: 'aggregate1',
-            chartTypeOption: chartTypeOptions.find(option => option.value === selectedValue)
-          })}
-      />
-      <Select
-        options={chartTypeOptions}
-        label='Chart Type: '
-        onChange={({selectedValue}) =>
-          onChartTypeSelect({
-            chartId: 'aggregate2',
-            chartTypeOption: chartTypeOptions.find(option => option.value === selectedValue)
-          })}
-      />
-    </div>
   </div>
 )
 
 AggregateControls.propTypes = {
-  chartTypeOptions: optionsShape.isRequired,
   timeRangeSourceOptions: optionsShape.isRequired,
-  onChartTypeSelect: func.isRequired,
   onTimeRangeSourceSelect: func.isRequired
 }
 
