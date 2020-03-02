@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Kabece/personal-data-visualiser/static/css/main.a3620e83.chunk.css",
+    "main.js": "/Kabece/personal-data-visualiser/static/js/main.b5dc19bc.chunk.js",
+    "main.js.map": "/Kabece/personal-data-visualiser/static/js/main.b5dc19bc.chunk.js.map",
+    "runtime-main.js": "/Kabece/personal-data-visualiser/static/js/runtime-main.790495cf.js",
+    "runtime-main.js.map": "/Kabece/personal-data-visualiser/static/js/runtime-main.790495cf.js.map",
+    "static/js/2.82b71ed1.chunk.js": "/Kabece/personal-data-visualiser/static/js/2.82b71ed1.chunk.js",
+    "static/js/2.82b71ed1.chunk.js.map": "/Kabece/personal-data-visualiser/static/js/2.82b71ed1.chunk.js.map",
+    "index.html": "/Kabece/personal-data-visualiser/index.html",
+    "precache-manifest.dd115a6adba8cac1d31ad2e2afcd5fbc.js": "/Kabece/personal-data-visualiser/precache-manifest.dd115a6adba8cac1d31ad2e2afcd5fbc.js",
+    "service-worker.js": "/Kabece/personal-data-visualiser/service-worker.js",
+    "static/css/main.a3620e83.chunk.css.map": "/Kabece/personal-data-visualiser/static/css/main.a3620e83.chunk.css.map",
+    "static/js/2.82b71ed1.chunk.js.LICENSE": "/Kabece/personal-data-visualiser/static/js/2.82b71ed1.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.790495cf.js",
+    "static/js/2.82b71ed1.chunk.js",
+    "static/css/main.a3620e83.chunk.css",
+    "static/js/main.b5dc19bc.chunk.js"
+  ]
+}
