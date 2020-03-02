@@ -45,6 +45,7 @@ const AggregateArea = ({
   return (
     <div className='aggregateArea'>
       <div className='aggregateAreaHeader'>Aggregate Data</div>
+      <div className='aggregateAreaSubHeader'>Click the event to see details</div>
       <div className='multiChart'>
         {(charts[1]?.chartType && charts[2]?.chartType)
           ? (
