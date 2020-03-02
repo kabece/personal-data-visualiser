@@ -2,6 +2,7 @@
   "name": "thesis",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Kabece/personal-data-visualiser",
   "dependencies": {
     "@agillic/create-reducer": "^1.0.5",
     "@nivo/calendar": "^0.61.1",
